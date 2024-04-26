@@ -1,3 +1,5 @@
+disableKinds = ["taxonomy","taxonomyTerm"]
+
 languageCode = 'nb-NO'
 title = 'Balevik IT & Service'
 theme = 'balevikit-tailwindcss-hugo-theme'
@@ -8,4 +10,3 @@ theme = 'balevikit-tailwindcss-hugo-theme'
   quality = 90
   resampleFilter = 'MitchellNetravali'
 
-disableKinds = ["taxonomy","taxonomyTerm"]
