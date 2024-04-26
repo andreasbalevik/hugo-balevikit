@@ -1,9 +1,11 @@
 languageCode = 'nb-NO'
 title = 'Balevik IT & Service'
-theme = 'boilerplate-hugo-theme'
+theme = 'balevikit-tailwindcss-hugo-theme'
 
 [imaging]
   anchor = 'Smart'
   hint = 'photo'
   quality = 90
   resampleFilter = 'MitchellNetravali'
+
+disableKinds = ["taxonomy","taxonomyTerm"]

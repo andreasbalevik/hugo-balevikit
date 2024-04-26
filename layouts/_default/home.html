@@ -1,23 +1,5 @@
 {{ define "main" }}
 
-<div class="component">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row rounded bg-white shadow p-4">
-                    <!-- Image column -->
-                    <div class="col-12 col-md-4 order-md-2">
-                        <img src="https://picsum.photos/200/300" alt="Sample Image" class="img-fluid">
-                    </div>
-                    <!-- Text column -->
-                    <div class="col-12 col-md-8 order-md-1">
-                        <h1 class="h2">Vi tilbyr enkle nettsider</h1>
-                        <p>Balevik IT & Service tilbyr enkle nettsider for kunder</p>
-                    </div>
-                </div>
-            </div>            
-        </div>
-    </div>
-</div>
+{{.Content}}
 
 {{ end }}
