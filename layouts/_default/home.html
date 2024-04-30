@@ -1,5 +1,7 @@
 {{ define "main" }}
 
-{{.Content}}
+<div class="h-full w-full text-xl">
+    {{ partial "components/image-banner.html" (dict "ctx" . "src" "images/example1.jpg" )}}
+</div>
 
 {{ end }}

@@ -2,8 +2,6 @@
 title: Balevik IT & Service
 ---
 
-
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa eros, ullamcorper in maximus in, imperdiet sed ipsum. Duis sodales ligula ornare urna molestie semper. Nullam ut metus tincidunt, fermentum est semper, imperdiet erat. Maecenas et efficitur risus. Maecenas sit amet imperdiet ipsum. Cras a libero sit amet justo consequat ultrices. Nunc eleifend sem quis metus consectetur, non pulvinar arcu euismod.
 
 Vivamus condimentum nunc ut pharetra tempus. Donec iaculis neque et rhoncus pulvinar. Pellentesque tristique, mauris ac tincidunt sollicitudin, sapien ligula tincidunt velit, non pretium dui tellus quis sem. Aenean eget nisl vel nunc ultricies fringilla in vel nulla. Nunc mauris elit, tincidunt eget ultrices a, ullamcorper sit amet justo. In hac habitasse platea dictumst. Aliquam vehicula ut mauris hendrerit iaculis. Vestibulum convallis pellentesque justo vitae lacinia. Donec mattis ante fringilla leo sodales, a molestie erat ultricies. Pellentesque sed suscipit nunc. Aliquam ante mi, tristique eu bibendum eu, ullamcorper sit amet tellus. Maecenas molestie, purus ut viverra bibendum, nisi turpis iaculis risus, sit amet bibendum quam mauris non nibh.

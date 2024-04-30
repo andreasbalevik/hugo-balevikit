@@ -7,6 +7,9 @@ theme = 'balevikit-tailwindcss-hugo-theme'
 [imaging]
   anchor = 'Smart'
   hint = 'photo'
-  quality = 90
-  resampleFilter = 'MitchellNetravali'
+  quality = 30
+  resampleFilter = 'CatmullRom'
+
+[params]
+  email = "andreasbalevik@gmail.com"
 
