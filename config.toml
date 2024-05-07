@@ -12,4 +12,5 @@ theme = 'balevikit-tailwindcss-hugo-theme'
 
 [params]
   email = "andreasbalevik@gmail.com"
+  orgnr = "925316504"
 
