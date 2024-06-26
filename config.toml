@@ -13,4 +13,7 @@ theme = 'balevikit-tailwindcss-hugo-theme'
 [params]
   email = "andreasbalevik@gmail.com"
   orgnr = "925316504"
+  description = "Balevik IT tilbyr enkle og billige nettsider for små bedrifter"
+  logo = "path"
+  keywords = "Balevik IT, enkle, nettsider, vestland, sogndal, billige"
 
