@@ -1,0 +1,34 @@
+baseURL = 'https://balevikit.no/'
+languageCode = 'nb-NO'
+title = 'Balevik IT & Service - Nettsider og IT-tjenester i Sogndal og Vestland'
+
+[params]
+  description = 'Profesjonelle nettsider og IT-konsultasjon i Sogndal, Leikanger og Balestrand. 10 års erfaring med webutvikling for små bedrifter i Vestland. Raske, sikre statiske nettsider til konkurransedyktige priser.'
+  email = 'andreasbalevik@gmail.com'
+  phone = '+47 95 12 77 23'
+  orgnr = '925316504'
+  keywords = 'nettsider Sogndal, webutvikling Vestland, IT-konsultasjon Leikanger, nettsider Balestrand, Hugo nettsider, statiske nettsider Norge, IT-tjenester Sogn og Fjordane, webbyrå Sogndal, IT-support Vestland, nettside små bedrifter'
+  author = 'Andreas Balevik'
+  
+  # Local SEO
+  location = 'Sogndal, Vestland, Norge'
+  serviceArea = 'Sogndal, Leikanger, Balestrand, Vestland, Sogn og Fjordane'
+  
+  # Open Graph / Social Media
+  og_image = '/logo.png'
+  twitter_card = 'summary_large_image'
+
+[params.business]
+  name = 'Balevik IT & Service'
+  locality = 'Sogndal'
+  region = 'Vestland'
+  country = 'Norge'
+  postalCode = '6856'
+
+[sitemap]
+  changefreq = 'monthly'
+  filename = 'sitemap.xml'
+  priority = 1.0
+
+[markup.goldmark.renderer]
+  unsafe = true

@@ -1,21 +1,15 @@
 {
-  "name": "hugo-balevikit.no",
+  "name": "hugo-balevikit",
   "version": "1.0.0",
-  "description": "Website using Hugo",
-  "main": "index.js",
+  "description": "Balevik IT & Service website",
   "scripts": {
-    "install": "npm install -g postcss-cli && cd themes/balevikit-tailwindcss-hugo-theme && npm install && npm run build-tw",
-    "watch-tw": "cd themes/balevikit-tailwindcss-hugo-theme && npm run watch-tw",
-    "build-tw": "cd themes/balevikit-tailwindcss-hugo-theme && npm run build-tw"
+    "dev": "concurrently \"npm run watch-tw\" \"hugo serve\"",
+    "watch-tw": "npx tailwindcss -i ./assets/css/input.css -o ./static/css/tailwind.css --watch",
+    "build-tw": "npx tailwindcss -i ./assets/css/input.css -o ./static/css/tailwind.css --minify",
+    "build": "npm run build-tw && hugo --minify"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andreasbalevik/hugo-balevikit.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/andreasbalevik/hugo-balevikit/issues"
-  },
-  "homepage": "https://github.com/andreasbalevik/hugo-balevikit#readme"
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "concurrently": "^8.2.2"
+  }
 }

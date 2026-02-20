@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="keywords" content="{{ .Site.Params.keywords }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ .Permalink }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.og_image }}">
+    <meta property="og:locale" content="nb_NO">
+    <meta property="og:site_name" content="{{ .Site.Params.business.name }}">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="{{ .Site.Params.twitter_card }}">
+    <meta property="twitter:url" content="{{ .Permalink }}">
+    <meta property="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+    <meta property="twitter:description" content="{{ .Site.Params.description }}">
+    <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.og_image }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/tailwind.css">
+    
+    <!-- JSON-LD Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "{{ .Site.Params.business.name }}",
+      "image": "{{ .Site.BaseURL }}{{ .Site.Params.og_image }}",
+      "description": "{{ .Site.Params.description }}",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{{ .Site.Params.business.locality }}",
+        "addressRegion": "{{ .Site.Params.business.region }}",
+        "postalCode": "{{ .Site.Params.business.postalCode }}",
+        "addressCountry": "{{ .Site.Params.business.country }}"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 61.2308,
+        "longitude": 7.0995
+      },
+      "url": "{{ .Site.BaseURL }}",
+      "telephone": "{{ .Site.Params.phone }}",
+      "email": "{{ .Site.Params.email }}",
+      "priceRange": "kr 2500 - 10000+",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sogndal"
+        },
+        {
+          "@type": "City",
+          "name": "Leikanger"
+        },
+        {
+          "@type": "City",
+          "name": "Balestrand"
+        },
+        {
+          "@type": "State",
+          "name": "Vestland"
+        }
+      ],
+      "sameAs": [],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    }
+    </script>
+    
+    <!-- JSON-LD for Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "{{ .Site.Params.business.name }}",
+      "url": "{{ .Site.BaseURL }}",
+      "logo": "{{ .Site.BaseURL }}{{ .Site.Params.og_image }}",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "{{ .Site.Params.phone }}",
+        "contactType": "customer service",
+        "email": "{{ .Site.Params.email }}",
+        "areaServed": "NO",
+        "availableLanguage": ["Norwegian"]
+      }
+    }
+    </script>
+</head>
+<body>
+    {{ block "main" . }}{{ end }}
+</body>
+</html>
