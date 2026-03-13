@@ -1,18 +1,18 @@
 baseURL = 'https://balevikit.no/'
 languageCode = 'nb-NO'
-title = 'Balevik IT & Service - Nettsider og IT-tjenester i Sogndal og Vestland'
+title = 'Nettsider i Vestland | Balevik IT & Service'
 
 [params]
-  description = 'Profesjonelle nettsider og IT-konsultasjon i Sogndal, Leikanger og Balestrand. 10 års erfaring med webutvikling for små bedrifter i Vestland. Raske, sikre statiske nettsider til konkurransedyktige priser.'
+  description = 'Vi lager raske, profesjonelle nettsider for bedrifter i Sogndal, Leikanger, Balestrand og Vestland. Fast pris fra 2.500 kr – inkludert alt.'
   email = 'andreasbalevik@gmail.com'
   phone = '+47 95 12 77 23'
   orgnr = '925316504'
-  keywords = 'nettsider Sogndal, webutvikling Vestland, IT-konsultasjon Leikanger, nettsider Balestrand, Hugo nettsider, statiske nettsider Norge, IT-tjenester Sogn og Fjordane, webbyrå Sogndal, IT-support Vestland, nettside små bedrifter'
+  keywords = 'nettsider Vestland, nettside Sogndal, lage nettside Vestland, webbyrå Vestland, nettside bedrift Sogndal, IT-konsultasjon Vestland, nettside pris Vestland, webutvikling Sogndal, nettside Balestrand, nettside Leikanger, nettside Luster, IT-tjenester Vestland, statiske nettsider Norge, nettside fra 2500 kr'
   author = 'Andreas Balevik'
   
   # Local SEO
   location = 'Sogndal, Vestland, Norge'
-  serviceArea = 'Sogndal, Leikanger, Balestrand, Vestland, Sogn og Fjordane'
+  serviceArea = 'Sogndal, Leikanger, Balestrand, Luster, Aurland, Årdal, Vik, Høyanger, Vestland'
   
   # Open Graph / Social Media
   og_image = '/logo.png'
@@ -22,7 +22,7 @@ title = 'Balevik IT & Service - Nettsider og IT-tjenester i Sogndal og Vestland'
   name = 'Balevik IT & Service'
   locality = 'Sogndal'
   region = 'Vestland'
-  country = 'Norge'
+  country = 'NO'
   postalCode = '6856'
 
 [sitemap]

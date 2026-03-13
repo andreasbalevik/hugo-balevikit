@@ -1,76 +1,78 @@
 {{ define "main" }}
 <!-- Header/Navigation -->
-<header class="bg-white/95 backdrop-blur-md lg:sticky top-0 z-50 shadow-sm">
-    <div class="max-w-7xl mx-auto px-8 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+<header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-ds-sm">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
         <div>
-            <img src="/logo.png" alt="Balevik IT & Service" class="h-16 w-auto">
+            <a href="/" aria-label="Balevik IT & Service – til forsiden">
+                <img src="/logo.png" alt="Balevik IT & Service" class="h-16 w-auto">
+            </a>
         </div>
-        <nav class="flex flex-wrap justify-center gap-8">
-            <a href="#tjenester" class="text-gray-700 hover:text-accent font-medium transition-colors">Tjenester</a>
-            <a href="#prosess" class="text-gray-700 hover:text-accent font-medium transition-colors">Prosess</a>
-            <a href="#kunder" class="text-gray-700 hover:text-accent font-medium transition-colors">Kunder</a>
-            <a href="#losninger" class="text-gray-700 hover:text-accent font-medium transition-colors">Løsninger</a>
-            <a href="#kontakt" class="text-gray-700 hover:text-accent font-medium transition-colors">Kontakt</a>
+        <nav aria-label="Hovednavigasjon" class="flex flex-wrap justify-center gap-8">
+            <a href="#tjenester" class="text-body-md text-gray-700 hover:text-accent font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">Tjenester</a>
+            <a href="#prosess"   class="text-body-md text-gray-700 hover:text-accent font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">Prosess</a>
+            <a href="#kunder"    class="text-body-md text-gray-700 hover:text-accent font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">Kunder</a>
+            <a href="#losninger" class="text-body-md text-gray-700 hover:text-accent font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">Løsninger</a>
+            <a href="#kontakt"   class="text-body-md text-gray-700 hover:text-accent font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">Kontakt</a>
         </nav>
     </div>
 </header>
 
 <!-- Hero Section -->
-<section id="hero" class="py-24 bg-gradient-to-br from-accent to-secondary text-white">
-    <div class="max-w-7xl mx-auto px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<section id="main-content" class="py-24 bg-gradient-to-br from-accent to-secondary text-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div class="max-w-2xl">
-                <h1 class="text-5xl md:text-6xl font-bold mb-8 leading-tight">Enkle nettsider for bedrifter i Vestland</h1>
-                <p class="text-xl md:text-2xl text-white/90 mb-12">Vi tar oss av alt det tekniske, så du kan fokusere på det du er god på. Du trenger ikke kunne noe om nettsider – det er vår jobb.</p>
-                <a href="#kontakt" class="inline-block bg-accent hover:bg-secondary text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:-translate-y-0.5 hover:shadow-xl">Ta kontakt</a>
+                <h1 class="text-heading-2xl md:text-heading-3xl font-medium mb-6 md:mb-8 text-white">Enkle nettsider for bedrifter i Vestland</h1>
+                <p class="text-body-lg md:text-body-xl text-white/90 mb-8 md:mb-12">Vi tar oss av alt det tekniske, så du kan fokusere på det du er god på. Du trenger ikke kunne noe om nettsider – det er vår jobb.</p>
+                <a href="#kontakt" class="inline-block bg-white/20 hover:bg-white/30 border-2 border-white text-white font-semibold px-8 py-4 rounded-lg transition-all hover:-translate-y-0.5 hover:shadow-ds-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-accent">Ta kontakt</a>
             </div>
             <div class="relative">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Web development" class="w-full h-auto rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-300" style="transform: perspective(1000px) rotateY(-5deg);">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Web development" class="w-full h-auto rounded-2xl shadow-2xl" style="transform: perspective(1000px) rotateY(-5deg);">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Tjenester -->
-<section id="tjenester" class="py-24">
-    <div class="max-w-7xl mx-auto px-8">
-        <h2 class="text-5xl font-semibold text-center text-primary mb-20">Hva vi tilbyr</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div class="bg-white p-16 rounded-xl border-2 border-gray-100 relative overflow-hidden transition-all hover:shadow-xl hover:-translate-y-2">
+<section id="tjenester" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <h2 class="text-heading-xl md:text-heading-2xl font-medium text-center text-primary mb-12 md:mb-20">Hva vi tilbyr</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+            <div class="bg-white p-8 md:p-12 lg:p-16 rounded-xl border-2 border-gray-100 relative overflow-hidden">
                 <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent to-secondary"></div>
-                <h3 class="text-3xl font-semibold mb-6 text-secondary">Nettside</h3>
-                <p class="text-lg text-gray-600 mb-6">En nettside som presenterer bedriften din på en god måte – tilpasset dine behov.</p>
+                <h3 class="text-heading-md md:text-heading-lg font-medium mb-3 text-secondary">Nettside</h3>
+                <p class="text-body-md text-gray-600 mb-6">En nettside som presenterer bedriften din på en god måte – tilpasset dine behov.</p>
                 <ul class="space-y-3">
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-4 text-lg">✓</span>
-                        <span class="text-gray-600 text-lg">Design tilpasset din bedrift</span>
+                        <span class="text-accent font-bold mr-4" aria-hidden="true">✓</span>
+                        <span class="text-gray-600">Design tilpasset din bedrift</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-4 text-lg">✓</span>
-                        <span class="text-gray-600 text-lg">Fungerer på mobil, nettbrett og PC</span>
+                        <span class="text-accent font-bold mr-4" aria-hidden="true">✓</span>
+                        <span class="text-gray-600">Fungerer på mobil, nettbrett og PC</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-4 text-lg">✓</span>
-                        <span class="text-gray-600 text-lg">Rask etablering</span>
+                        <span class="text-accent font-bold mr-4" aria-hidden="true">✓</span>
+                        <span class="text-gray-600">Rask etablering</span>
                     </li>
                 </ul>
             </div>
-            <div class="bg-white p-16 rounded-xl border-2 border-gray-100 relative overflow-hidden transition-all hover:shadow-xl hover:-translate-y-2">
+            <div class="bg-white p-8 md:p-12 lg:p-16 rounded-xl border-2 border-gray-100 relative overflow-hidden">
                 <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent to-secondary"></div>
-                <h3 class="text-3xl font-semibold mb-6 text-secondary">IT-konsultasjon</h3>
-                <p class="text-lg text-gray-600 mb-6">Trenger du faglig hjelp til IT i bedriften? Vi stiller opp.</p>
+                <h3 class="text-heading-md md:text-heading-lg font-medium mb-3 text-secondary">IT-konsultasjon</h3>
+                <p class="text-body-md text-gray-600 mb-6">Trenger du faglig hjelp til IT i bedriften? Vi stiller opp.</p>
                 <ul class="space-y-3">
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-4 text-lg">✓</span>
-                        <span class="text-gray-600 text-lg">Over 10 års erfaring som utvikler</span>
+                        <span class="text-accent font-bold mr-4" aria-hidden="true">✓</span>
+                        <span class="text-gray-600">Over 10 års erfaring som utvikler</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-4 text-lg">✓</span>
-                        <span class="text-gray-600 text-lg">Erfaring fra privat og offentlig sektor</span>
+                        <span class="text-accent font-bold mr-4" aria-hidden="true">✓</span>
+                        <span class="text-gray-600">Erfaring fra privat og offentlig sektor</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-4 text-lg">✓</span>
-                        <span class="text-gray-600 text-lg">Ekstra hjelp når du trenger det</span>
+                        <span class="text-accent font-bold mr-4" aria-hidden="true">✓</span>
+                        <span class="text-gray-600">Ekstra hjelp når du trenger det</span>
                     </li>
                 </ul>
             </div>
@@ -79,225 +81,221 @@
 </section>
 
 <!-- Fordeler -->
-<section id="fordeler" class="py-24 bg-gradient-to-br from-blue-50 to-blue-100">
-    <div class="max-w-7xl mx-auto px-8">
-        <h2 class="text-5xl font-semibold text-center text-primary mb-8">Hva du får hos oss</h2>
-        <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-20">
+<section id="fordeler" class="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-blue-100">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <h2 class="text-heading-xl md:text-heading-2xl font-medium text-center text-primary mb-6 md:mb-8">Hva du får hos oss</h2>
+        <p class="text-center text-body-lg text-gray-600 max-w-3xl mx-auto mb-12 md:mb-20">
             Vi gjør det enkelt å ha en nettside – moderne design, lave kostnader og ingenting du trenger å tenke på i etterkant.
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class="text-center p-10 bg-white rounded-xl transition-all hover:shadow-xl hover:-translate-y-2">
-                <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center text-accent">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+            <div class="text-center p-8 md:p-10 bg-white rounded-xl">
+                <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center text-accent" aria-hidden="true">
                     <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
                 </div>
-                <h3 class="text-2xl font-semibold mb-3">Ingen abonnement</h3>
-                <p class="text-gray-600 text-base">Du betaler for nettsiden – ikke et månedlig abonnement. Drift og domene kommer i tillegg, men er rimelig.</p>
+                <h3 class="text-heading-sm md:text-heading-md font-medium mb-2">Ingen abonnement</h3>
+                <p class="text-body-md text-gray-600">Du betaler for nettsiden – ikke et månedlig abonnement. Drift og domene kommer i tillegg, men er rimelig.</p>
             </div>
-            <div class="text-center p-10 bg-white rounded-xl transition-all hover:shadow-xl hover:-translate-y-2">
-                <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center text-accent">
+            <div class="text-center p-8 md:p-10 bg-white rounded-xl">
+                <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center text-accent" aria-hidden="true">
                     <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="11" cy="11" r="8"></circle>
                         <path d="m21 21-4.35-4.35"></path>
                     </svg>
                 </div>
-                <h3 class="text-2xl font-semibold mb-3">Økt synlighet på nett</h3>
-                <p class="text-gray-600 text-base">Vi bygger nettsiden slik at Google forstår hva du tilbyr og øker sjansen for at potensielle kunder finner deg.</p>
+                <h3 class="text-heading-sm md:text-heading-md font-medium mb-2">Økt synlighet på nett</h3>
+                <p class="text-body-md text-gray-600">Vi bygger nettsiden slik at Google forstår hva du tilbyr og øker sjansen for at potensielle kunder finner deg.</p>
             </div>
-            <div class="text-center p-10 bg-white rounded-xl transition-all hover:shadow-xl hover:-translate-y-2">
-                <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center text-accent">
+            <div class="text-center p-8 md:p-10 bg-white rounded-xl">
+                <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center text-accent" aria-hidden="true">
                     <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                     </svg>
                 </div>
-                <h3 class="text-2xl font-semibold mb-3">Trygg og sikker nettside</h3>
-                <p class="text-gray-600 text-base">Nettsiden trenger ikke oppdateringer eller vedlikehold – det betyr færre ting som kan gå galt.</p>
+                <h3 class="text-heading-sm md:text-heading-md font-medium mb-2">Trygg og sikker nettside</h3>
+                <p class="text-body-md text-gray-600">Nettsiden trenger ikke oppdateringer eller vedlikehold – det betyr færre ting som kan gå galt.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Prosess -->
-<section id="prosess" class="py-24">
-    <div class="max-w-7xl mx-auto px-8">
-        <h2 class="text-5xl font-semibold text-center text-primary mb-20">Hvordan vi jobber</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative">
+<section id="prosess" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <h2 class="text-heading-xl md:text-heading-2xl font-medium text-center text-primary mb-12 md:mb-20">Hvordan vi jobber</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 relative">
             <div class="hidden lg:block absolute top-10 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-accent to-secondary -z-10"></div>
             <div class="text-center">
-                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent to-secondary text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">1</div>
-                <h3 class="text-2xl font-semibold mb-3">Samtale</h3>
-                <p class="text-gray-600 text-base">Vi kartlegger dine behov og finner riktig løsning for din bedrift</p>
+                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent to-secondary text-white rounded-full flex items-center justify-center text-heading-md font-semibold shadow-ds-sm">1</div>
+                <h3 class="text-heading-sm md:text-heading-md font-medium mb-2">Samtale</h3>
+                <p class="text-body-md text-gray-600">Vi kartlegger dine behov og finner riktig løsning for din bedrift</p>
             </div>
             <div class="text-center">
-                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent to-secondary text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">2</div>
-                <h3 class="text-2xl font-semibold mb-3">Utkast</h3>
-                <p class="text-gray-600 text-base">Vi lager et første utkast som du får se og gi tilbakemelding på</p>
+                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent to-secondary text-white rounded-full flex items-center justify-center text-heading-md font-semibold shadow-ds-sm">2</div>
+                <h3 class="text-heading-sm md:text-heading-md font-medium mb-2">Utkast</h3>
+                <p class="text-body-md text-gray-600">Vi lager et første utkast som du får se og gi tilbakemelding på</p>
             </div>
             <div class="text-center">
-                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent to-secondary text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">3</div>
-                <h3 class="text-2xl font-semibold mb-3">Justeringer</h3>
-                <p class="text-gray-600 text-base">Vi justerer og forbedrer sammen til du er fornøyd med resultatet</p>
+                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent to-secondary text-white rounded-full flex items-center justify-center text-heading-md font-semibold shadow-ds-sm">3</div>
+                <h3 class="text-heading-sm md:text-heading-md font-medium mb-2">Justeringer</h3>
+                <p class="text-body-md text-gray-600">Vi justerer og forbedrer sammen til du er fornøyd med resultatet</p>
             </div>
             <div class="text-center">
-                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent to-secondary text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">4</div>
-                <h3 class="text-2xl font-semibold mb-3">Lansering</h3>
-                <p class="text-gray-600 text-base">Alt er klart – nettsiden er på nett og klar til bruk</p>
+                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent to-secondary text-white rounded-full flex items-center justify-center text-heading-md font-semibold shadow-ds-sm">4</div>
+                <h3 class="text-heading-sm md:text-heading-md font-medium mb-2">Lansering</h3>
+                <p class="text-body-md text-gray-600">Alt er klart – nettsiden er på nett og klar til bruk</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Kunder -->
-<section id="kunder" class="py-24 bg-gradient-to-br from-blue-50 to-blue-100">
-    <div class="max-w-7xl mx-auto px-8">
-        <h2 class="text-5xl font-semibold text-center text-primary mb-20">Fornøyde kunder</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<section id="kunder" class="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-blue-100">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <h2 class="text-heading-xl md:text-heading-2xl font-medium text-center text-primary mb-12 md:mb-20">Fornøyde kunder</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
 
-            <a href="https://balestrandfjordangling.com" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl hover:-translate-y-2 block">
+            <a href="https://balestrandfjordangling.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk Balestrand Fjord Angling (åpner i ny fane)" class="bg-white rounded-xl shadow-ds-md overflow-hidden transition-all hover:shadow-ds-xl hover:-translate-y-2 block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">
                 <div class="aspect-video bg-gray-100 relative overflow-hidden">
-                    <img src="/balestrandfjordangling.png" alt="Balestrand Fjord Angling" class="w-full h-full object-cover">
+                    <img src="/balestrandfjordangling.png" alt="Skjermbilde av Balestrand Fjord Angling sin nettside" class="w-full h-full object-cover">
                 </div>
-                <div class="p-10">
-                    <h3 class="text-3xl font-bold text-secondary mb-3">Balestrand Fjord Angling</h3>
-                    <p class="text-lg text-accent hover:text-secondary font-medium mb-4">
-                        balestrandfjordangling.com →
-                    </p>
-                    <p class="text-lg text-gray-600 bg-blue-50 inline-block px-4 py-2 rounded-full">
+                <div class="p-6 md:p-10">
+                    <h3 class="text-heading-lg md:text-heading-xl font-medium text-secondary mb-2">Balestrand Fjord Angling</h3>
+                    <p class="text-body-sm text-gray-500 mb-3">balestrandfjordangling.com</p>
+                    <p class="text-body-sm text-gray-600 bg-blue-50 inline-block px-4 py-2 rounded-full">
                         <span class="font-semibold">Løsning:</span> Skreddersydd
                     </p>
                 </div>
             </a>
 
-            <a href="https://fjordapartments.no" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl hover:-translate-y-2 block">
+            <a href="https://fjordapartments.no" target="_blank" rel="noopener noreferrer" aria-label="Besøk Fjord Apartments (åpner i ny fane)" class="bg-white rounded-xl shadow-ds-md overflow-hidden transition-all hover:shadow-ds-xl hover:-translate-y-2 block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">
                 <div class="aspect-video bg-gray-100 relative overflow-hidden">
-                    <img src="/fjordapartments.png" alt="Fjord Apartments" class="w-full h-full object-cover">
+                    <img src="/fjordapartments.png" alt="Skjermbilde av Fjord Apartments sin nettside" class="w-full h-full object-cover">
                 </div>
-                <div class="p-10">
-                    <h3 class="text-3xl font-bold text-secondary mb-3">Fjord Apartments</h3>
-                    <p class="text-lg text-accent hover:text-secondary font-medium mb-4">
-                        fjordapartments.no →
-                    </p>
-                    <p class="text-lg text-gray-600 bg-blue-50 inline-block px-4 py-2 rounded-full">
+                <div class="p-6 md:p-10">
+                    <h3 class="text-heading-lg md:text-heading-xl font-medium text-secondary mb-2">Fjord Apartments</h3>
+                    <p class="text-body-sm text-gray-500 mb-3">fjordapartments.no</p>
+                    <p class="text-body-sm text-gray-600 bg-blue-50 inline-block px-4 py-2 rounded-full">
                         <span class="font-semibold">Løsning:</span> Enkel
                     </p>
                 </div>
             </a>
         </div>
         
-        <div class="mt-20 text-center">
-            <p class="text-lg text-gray-500 mb-4">Tidligere kunder:</p>
-            <p class="text-lg text-gray-600">Balholm Bilutleige • Buene Rørservice • Vestland Tømrerteam</p>
+        <div class="mt-12 md:mt-20 text-center">
+            <p class="text-body-sm text-gray-500 mb-3">Tidligere kunder:</p>
+            <p class="text-body-sm text-gray-600">Balholm Bilutleige • Buene Rørservice • Vestland Tømrerteam</p>
         </div>
     </div>
 </section>
 
 <!-- Priser -->
-<section id="losninger" class="py-24">
-    <div class="max-w-7xl mx-auto px-8">
-        <h2 class="text-5xl font-semibold text-center text-primary mb-8">Løsninger</h2>
-        <p class="text-center text-xl text-gray-600 mb-20 max-w-2xl mx-auto">Velg løsningen som passer deg – alt er inkludert i prisen.</p>
+<section id="losninger" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <h2 class="text-heading-xl md:text-heading-2xl font-medium text-center text-primary mb-6 md:mb-8">Løsninger</h2>
+        <p class="text-center text-body-lg md:text-body-xl text-gray-600 mb-12 md:mb-20 max-w-2xl mx-auto">Velg løsningen som passer deg – alt er inkludert i prisen.</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class="bg-white rounded-xl border-2 border-gray-200 p-10 flex flex-col transition-all hover:shadow-xl hover:-translate-y-2">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+            <div class="bg-white rounded-xl border-2 border-gray-200 p-10 flex flex-col">
                 <div class="text-center pb-8 border-b border-gray-200 mb-8">
-                    <h3 class="text-3xl font-bold text-primary mb-3">Enkel</h3>
-                    <p class="text-gray-600 text-lg">Mindre nettsider</p>
+                    <h3 class="text-heading-md md:text-heading-lg font-semibold text-primary mb-1">Enkel</h3>
+                    <p class="text-body-sm text-gray-500">Mindre nettsider</p>
                 </div>
-                <ul class="space-y-3 flex-1 mb-8 text-lg">
+                <ul class="space-y-3 flex-1 mb-8">
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">1 side (landingsside)</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">Enkelt design</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">Ett språk</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">1 måned support</span>
                     </li>
                 </ul>
                 <div class="text-center pt-8 border-t border-gray-200">
-                    <p class="text-sm text-gray-500 uppercase tracking-wider mb-2">Fra</p>
-                    <p class="text-4xl font-bold text-primary mb-6">2.500 kr</p>
-                    <a href="#kontakt" class="block w-full bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-white font-semibold py-3 px-6 rounded-lg transition-all text-lg">Kontakt oss</a>
+                    <p class="text-body-xs text-gray-500 uppercase tracking-widest mb-2">Fra</p>
+                    <p class="text-heading-2xl font-semibold text-primary mb-6">2.500 kr</p>
+                    <a href="#kontakt" class="block w-full bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-white font-semibold py-3 px-6 rounded-lg transition-all text-body-md font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">Kontakt oss</a>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl border-2 border-accent p-10 flex flex-col transition-all hover:shadow-xl hover:-translate-y-2 shadow-lg relative">
-                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-accent to-secondary text-white text-lg font-semibold px-6 py-2 rounded-full">Populær</div>
+            <div class="bg-white rounded-xl border-2 border-accent p-10 flex flex-col shadow-ds-md relative">
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-accent to-secondary text-white text-body-md font-semibold px-6 py-2 rounded-full">Populær</div>
                 <div class="text-center pb-8 border-b border-gray-200 mb-8">
-                    <h3 class="text-3xl font-bold text-primary mb-3">Standard</h3>
-                    <p class="text-gray-600 text-lg">For de fleste bedrifter</p>
+                    <h3 class="text-heading-md md:text-heading-lg font-semibold text-primary mb-1">Standard</h3>
+                    <p class="text-body-sm text-gray-500">For de fleste bedrifter</p>
                 </div>
-                <ul class="space-y-3 flex-1 mb-8 text-lg">
+                <ul class="space-y-3 flex-1 mb-8">
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">2-5 sider</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">Tilpasset design</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">Flerspråk</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">Meny og navigasjon</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">Kontaktskjema</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">3 måneders support</span>
                     </li>
                 </ul>
                 <div class="text-center pt-8 border-t border-gray-200">
-                    <p class="text-sm text-gray-500 uppercase tracking-wider mb-2">Fra</p>
-                    <p class="text-4xl font-bold text-primary mb-6">5.000 kr</p>
-                    <a href="#kontakt" class="block w-full bg-accent hover:bg-secondary text-white font-semibold py-3 px-6 rounded-lg transition-all text-lg">Kontakt oss</a>
+                    <p class="text-body-xs text-gray-500 uppercase tracking-widest mb-2">Fra</p>
+                    <p class="text-heading-2xl font-semibold text-primary mb-6">5.000 kr</p>
+                    <a href="#kontakt" class="block w-full bg-accent hover:bg-secondary text-white font-semibold py-3 px-6 rounded-lg transition-all text-body-md font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">Kontakt oss</a>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl border-2 border-gray-200 p-10 flex flex-col transition-all hover:shadow-xl hover:-translate-y-2">
+            <div class="bg-white rounded-xl border-2 border-gray-200 p-10 flex flex-col">
                 <div class="text-center pb-8 border-b border-gray-200 mb-8">
-                    <h3 class="text-3xl font-bold text-primary mb-3">Skreddersydd</h3>
-                    <p class="text-gray-600 text-lg">Når du trenger noe utover det vanlige</p>
+                    <h3 class="text-heading-md md:text-heading-lg font-semibold text-primary mb-1">Skreddersydd</h3>
+                    <p class="text-body-sm text-gray-500">Når du trenger noe utover det vanlige</p>
                 </div>
-                <ul class="space-y-3 flex-1 mb-8 text-lg">
+                <ul class="space-y-3 flex-1 mb-8">
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">Alt i Standard +</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">Ubegrenset sider</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">CMS</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">Avansert funksjonalitet – det du trenger</span>
                     </li>
                     <li class="flex items-start">
-                        <span class="text-accent font-bold mr-3">✓</span>
+                        <span class="text-accent font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">Utvidet support</span>
                     </li>
                 </ul>
                 <div class="text-center pt-8 border-t border-gray-200">
-                    <p class="text-xl text-gray-600 font-semibold mb-6">Etter avtale</p>
-                    <a href="#kontakt" class="block w-full bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-white font-semibold py-3 px-6 rounded-lg transition-all text-lg">Kontakt oss</a>
+                    <p class="text-heading-lg text-gray-600 font-medium mb-6">Etter avtale</p>
+                    <a href="#kontakt" class="block w-full bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-white font-semibold py-3 px-6 rounded-lg transition-all text-body-md font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">Kontakt oss</a>
                 </div>
             </div>
         </div>
@@ -305,30 +303,30 @@
 </section>
 
 <!-- Kontakt -->
-<section id="kontakt" class="py-24 bg-gradient-to-br from-blue-50 to-blue-100">
-    <div class="max-w-7xl mx-auto px-8">
-        <h2 class="text-5xl font-semibold text-center text-primary mb-8">Ta kontakt</h2>
-        <p class="text-center text-xl text-gray-600 mb-20 max-w-2xl mx-auto">Ta gjerne kontakt for en uforpliktende prat om ditt prosjekt</p>
+<section id="kontakt" class="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-blue-100">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <h2 class="text-heading-xl md:text-heading-2xl font-medium text-center text-primary mb-6 md:mb-8">Ta kontakt</h2>
+        <p class="text-center text-body-lg md:text-body-xl text-gray-600 mb-12 md:mb-20 max-w-2xl mx-auto">Ta gjerne kontakt for en uforpliktende prat om ditt prosjekt</p>
             
-        <div class="max-w-2xl mx-auto bg-white p-16 rounded-xl shadow-lg text-center">
+        <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 lg:p-16 rounded-xl shadow-ds-md text-center">
             <div class="space-y-8">
                 <div>
-                    <p class="text-sm text-gray-500 uppercase tracking-wider mb-4">E-post</p>
-                    <a href="mailto:andreasbalevik@gmail.com" class="text-2xl md:text-3xl font-semibold text-accent hover:text-secondary transition-colors break-all">
+                    <p class="text-body-xs text-gray-500 uppercase tracking-widest mb-3">E-post</p>
+                    <a href="mailto:andreasbalevik@gmail.com" class="text-heading-lg md:text-heading-xl font-semibold text-accent hover:text-secondary transition-colors break-all rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">
                         andreasbalevik@gmail.com
                     </a>
                 </div>
                 
                 <div class="border-t border-gray-200 pt-8">
-                    <p class="text-sm text-gray-500 uppercase tracking-wider mb-4">Telefon</p>
-                    <a href="tel:+4795127723" class="text-2xl md:text-3xl font-semibold text-accent hover:text-secondary transition-colors">
+                    <p class="text-body-xs text-gray-500 uppercase tracking-widest mb-3">Telefon</p>
+                    <a href="tel:+4795127723" class="text-heading-lg md:text-heading-xl font-semibold text-accent hover:text-secondary transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">
                         +47 95 12 77 23
                     </a>
                 </div>
                 
                 <div class="border-t border-gray-200 pt-8">
-                    <p class="text-sm text-gray-500 uppercase tracking-wider mb-4">Organisasjonsnummer</p>
-                    <p class="text-xl md:text-2xl font-semibold text-gray-700">{{ .Site.Params.orgnr }}</p>
+                    <p class="text-body-xs text-gray-500 uppercase tracking-widest mb-3">Organisasjonsnummer</p>
+                    <p class="text-heading-md md:text-heading-lg font-medium text-gray-700">{{ .Site.Params.orgnr }}</p>
                 </div>
             </div>
         </div>
@@ -337,9 +335,9 @@
 
 <!-- Footer -->
 <footer class="bg-gradient-to-r from-secondary to-primary text-white text-center py-16">
-    <div class="max-w-7xl mx-auto px-8">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
         <p class="mb-2">&copy; {{ now.Year }} Balevik IT & Service | Org.nr: {{ .Site.Params.orgnr }}</p>
-        <p class="text-sm text-white/80">Nettsider og IT-tjenester i Sogndal, Balestrand og resten av Vestland</p>
+        <p class="text-body-sm text-white/80">Nettsider og IT-tjenester i Sogndal, Balestrand og resten av Vestland</p>
     </div>
 </footer>
 {{ end }}
