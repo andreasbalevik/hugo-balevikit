@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "Balevik IT & Service website",
   "scripts": {
-    "dev": "concurrently \"npm run watch-tw\" \"hugo serve\"",
-    "watch-tw": "npx tailwindcss -i ./assets/css/input.css -o ./static/css/tailwind.css --watch",
-    "build-tw": "npx tailwindcss -i ./assets/css/input.css -o ./static/css/tailwind.css --minify",
-    "build": "npm run build-tw && hugo --minify"
+    "dev": "hugo serve --disableFastRender",
+    "build": "hugo --minify"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.0",
-    "concurrently": "^8.2.2"
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
   }
 }
