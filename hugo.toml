@@ -34,9 +34,7 @@ theme = 'balevikit-tailwindcss-hugo-theme'
   location = 'Sogndal, Vestland, Norge'
   serviceArea = 'Sogndal, Leikanger, Balestrand, Luster, Aurland, Årdal, Vik, Høyanger, Vestland'
   
-  # Open Graph / Social Media
-  og_image = '/logo.png'
-  logo = '/logo.png'
+  logo = 'logo.png'
   twitter_card = 'summary_large_image'
 
 [params.business]
