@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@source "hugo_stats.json";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --color-primary: oklch(56.8% 0.1408 244.2);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-block: 3rem;
+  padding-inline: 1rem;
+  max-width: 1280px;
+
+  @media (min-width: 1024px) {
+    padding-block: 4rem;
+  }
+
+  @media (min-width: 1536px) {
+    padding-block: 5rem;
+    padding-inline: 0;
+  }
+}
+
+@layer base {
+  html {
+    font-size: 18px;
+    font-feature-settings: 'cv05' 1;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    color: theme(colors.gray.900);
+  }
+}

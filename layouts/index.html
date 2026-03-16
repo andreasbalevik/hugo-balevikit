@@ -1,29 +1,11 @@
 {{ define "main" }}
-<!-- Header/Navigation -->
-<header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
-        <div>
-            <a href="/" aria-label="Balevik IT & Service – til forsiden">
-                <img src="/logo.png" alt="Balevik IT & Service" class="h-12 md:h-16 w-auto">
-            </a>
-        </div>
-        <nav aria-label="Hovednavigasjon" class="flex flex-wrap justify-center gap-8">
-            <a href="#tjenester" class="text-base text-gray-700 hover:text-primary font-medium transition-colors rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Tjenester</a>
-            <a href="#prosess"   class="text-base text-gray-700 hover:text-primary font-medium transition-colors rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Prosess</a>
-            <a href="#kunder"    class="text-base text-gray-700 hover:text-primary font-medium transition-colors rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Kunder</a>
-            <a href="#losninger" class="text-base text-gray-700 hover:text-primary font-medium transition-colors rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Løsninger</a>
-            <a href="#kontakt"   class="text-base text-gray-700 hover:text-primary font-medium transition-colors rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Kontakt</a>
-        </nav>
-    </div>
-</header>
-
 <!-- Hero Section -->
 <section id="main-content" class="bg-gradient-to-br from-[#0080C8] to-[#004E7A] text-white">
     <div class="container py-16 md:py-24">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
             <div class="max-w-2xl">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-white">Enkle nettsider for bedrifter i Vestland</h1>
-                <p class="text-xl leading-relaxed text-white/90 text-pretty mb-8">Vi tar oss av alt det tekniske, så du kan fokusere på det du er god på. Du trenger ikke kunne noe om nettsider – det er vår jobb.</p>
+                <p class="text-xl leading-relaxed text-white/90 text-pretty mb-8">Fast pris, rask levering og ingen overraskelser. Du forteller om bedriften din – vi bygger resten.</p>
                 <a href="#kontakt" class="inline-flex items-center gap-2 text-base font-semibold bg-white/20 hover:bg-white/30 active:bg-white/40 border-2 border-white text-white px-8 py-4 rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Ta kontakt</a>
             </div>
             <div class="relative">
@@ -94,27 +76,26 @@
                         <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
                 </div>
-                <h3 class="text-lg md:text-xl lg:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-4">Ingen abonnement</h3>
-                <p class="text-base leading-normal text-gray-700 text-pretty">Du betaler for nettsiden – ikke et månedlig abonnement. Drift og domene kommer i tillegg, men er rimelig.</p>
+                <h3 class="text-lg md:text-xl lg:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-4">Fastpris – ingen abonnement</h3>
+                <p class="text-base leading-normal text-gray-700 text-pretty">Du betaler én gang for nettsiden. Ingen månedlige kostnader, ingen skjulte fakturaer – bare en liten driftsavgift i tillegg.</p>
             </div>
             <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow transition-all duration-300 text-center p-8">
                 <div class="w-12 h-12 mx-auto mb-6 flex items-center justify-center text-primary" aria-hidden="true">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <path d="m21 21-4.35-4.35"></path>
+                        <rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>
                     </svg>
                 </div>
-                <h3 class="text-lg md:text-xl lg:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-4">Økt synlighet på nett</h3>
-                <p class="text-base leading-normal text-gray-700 text-pretty">Vi bygger nettsiden slik at Google forstår hva du tilbyr og øker sjansen for at potensielle kunder finner deg.</p>
+                <h3 class="text-lg md:text-xl lg:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-4">Enkel og oversiktlig</h3>
+                <p class="text-base leading-normal text-gray-700 text-pretty">Vi lager nettsider som er ryddige og lette å forstå – besøkende finner raskt det de leter etter, uten forvirring.</p>
             </div>
             <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow transition-all duration-300 text-center p-8">
                 <div class="w-12 h-12 mx-auto mb-6 flex items-center justify-center text-primary" aria-hidden="true">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
                     </svg>
                 </div>
-                <h3 class="text-lg md:text-xl lg:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-4">Trygg og sikker nettside</h3>
-                <p class="text-base leading-normal text-gray-700 text-pretty">Nettsiden trenger ikke oppdateringer eller vedlikehold – det betyr færre ting som kan gå galt.</p>
+                <h3 class="text-lg md:text-xl lg:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-4">Personlig service</h3>
+                <p class="text-base leading-normal text-gray-700 text-pretty">Du snakker direkte med oss – ikke et støttesystem. Vi kjenner løsningen din og er tilgjengelige når du trenger hjelp.</p>
             </div>
         </div>
     </div>
@@ -198,24 +179,24 @@
     <div class="container">
         <div class="text-center mb-12">
             <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-primary">Løsninger</h2>
-            <p class="text-lg leading-relaxed text-gray-700 text-pretty max-w-2xl mx-auto">Velg løsningen som passer deg – alt er inkludert i prisen.</p>
+            <p class="text-lg leading-relaxed text-gray-700 text-pretty max-w-2xl mx-auto">Vi starter enkelt og bygger på det du trenger. Jo mer funksjonalitet, jo høyere pris – men alltid fastpris, og drift er eneste løpende kostnad.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
             <!-- Enkel -->
-            <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow transition-all duration-300 p-8 flex flex-col">
+            <div class="bg-white border-2 border-gray-300 rounded-lg shadow-sm hover:shadow transition-all duration-300 p-8 flex flex-col">
                 <div class="text-center pb-8 border-b border-gray-200 mb-8">
-                    <h3 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-2 text-primary">Enkel</h3>
-                    <p class="text-sm text-gray-500">Mindre nettsider</p>
+                <h3 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-2 text-primary">Enkel</h3>
+                    <p class="text-sm text-gray-500">Bare det du trenger</p>
                 </div>
                 <ul class="space-y-3 flex-1 mb-8">
                     <li class="flex items-start">
                         <span class="text-primary font-bold mr-3" aria-hidden="true">✓</span>
-                        <span class="text-gray-700">1 side (landingsside)</span>
+                        <span class="text-gray-700">1 side – rent og enkelt</span>
                     </li>
                     <li class="flex items-start">
                         <span class="text-primary font-bold mr-3" aria-hidden="true">✓</span>
-                        <span class="text-gray-700">Enkelt design</span>
+                        <span class="text-gray-700">Design tilpasset din bedrift</span>
                     </li>
                     <li class="flex items-start">
                         <span class="text-primary font-bold mr-3" aria-hidden="true">✓</span>
@@ -259,10 +240,6 @@
                     </li>
                     <li class="flex items-start">
                         <span class="text-primary font-bold mr-3" aria-hidden="true">✓</span>
-                        <span class="text-gray-700">Kontaktskjema</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-primary font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">3 måneders support</span>
                     </li>
                 </ul>
@@ -274,10 +251,10 @@
             </div>
 
             <!-- Skreddersydd -->
-            <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow transition-all duration-300 p-8 flex flex-col">
+            <div class="bg-white border-2 border-gray-300 rounded-lg shadow-sm hover:shadow transition-all duration-300 p-8 flex flex-col">
                 <div class="text-center pb-8 border-b border-gray-200 mb-8">
                     <h3 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-2 text-primary">Skreddersydd</h3>
-                    <p class="text-sm text-gray-500">Når du trenger noe utover det vanlige</p>
+                    <p class="text-sm text-gray-500">Sett sammen etter dine behov</p>
                 </div>
                 <ul class="space-y-3 flex-1 mb-8">
                     <li class="flex items-start">
@@ -291,6 +268,10 @@
                     <li class="flex items-start">
                         <span class="text-primary font-bold mr-3" aria-hidden="true">✓</span>
                         <span class="text-gray-700">CMS</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-primary font-bold mr-3" aria-hidden="true">✓</span>
+                        <span class="text-gray-700">Kontaktskjema</span>
                     </li>
                     <li class="flex items-start">
                         <span class="text-primary font-bold mr-3" aria-hidden="true">✓</span>
@@ -343,11 +324,4 @@
     </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-gray-900 text-white text-center">
-    <div class="container">
-        <p class="mb-2">&copy; {{ now.Year }} Balevik IT & Service | Org.nr: {{ .Site.Params.orgnr }}</p>
-        <p class="text-sm text-white/80">Nettsider og IT-tjenester i Sogndal, Balestrand og resten av Vestland</p>
-    </div>
-</footer>
 {{ end }}

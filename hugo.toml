@@ -1,6 +1,7 @@
 baseURL = 'https://balevikit.no/'
 languageCode = 'nb-NO'
-title = 'Nettsider i Vestland | Balevik IT & Service'
+title = 'Balevik IT & Service'
+theme = 'balevikit-tailwindcss-hugo-theme'
 
 [build]
   [build.buildStats]
@@ -26,7 +27,7 @@ title = 'Nettsider i Vestland | Balevik IT & Service'
   email = 'andreasbalevik@gmail.com'
   phone = '+47 95 12 77 23'
   orgnr = '925316504'
-  keywords = 'nettsider Vestland, nettside Sogndal, lage nettside Vestland, webbyrå Vestland, nettside bedrift Sogndal, IT-konsultasjon Vestland, nettside pris Vestland, webutvikling Sogndal, nettside Balestrand, nettside Leikanger, nettside Luster, IT-tjenester Vestland, statiske nettsider Norge, nettside fra 2500 kr'
+  keywords = ['nettsider Vestland', 'nettside Sogndal', 'lage nettside Vestland', 'webbyrå Vestland', 'nettside bedrift Sogndal', 'IT-konsultasjon Vestland', 'nettside pris Vestland', 'webutvikling Sogndal', 'nettside Balestrand', 'nettside Leikanger', 'nettside Luster', 'IT-tjenester Vestland', 'statiske nettsider Norge', 'nettside fra 2500 kr']
   author = 'Andreas Balevik'
   
   # Local SEO
@@ -35,6 +36,7 @@ title = 'Nettsider i Vestland | Balevik IT & Service'
   
   # Open Graph / Social Media
   og_image = '/logo.png'
+  logo = '/logo.png'
   twitter_card = 'summary_large_image'
 
 [params.business]
@@ -43,6 +45,28 @@ title = 'Nettsider i Vestland | Balevik IT & Service'
   region = 'Vestland'
   country = 'NO'
   postalCode = '6856'
+
+[menu]
+  [[menu.main]]
+    name = "Tjenester"
+    url = "/#tjenester"
+    weight = 1
+  [[menu.main]]
+    name = "Prosess"
+    url = "/#prosess"
+    weight = 2
+  [[menu.main]]
+    name = "Kunder"
+    url = "/#kunder"
+    weight = 3
+  [[menu.main]]
+    name = "Løsninger"
+    url = "/#losninger"
+    weight = 4
+  [[menu.main]]
+    name = "Kontakt"
+    url = "/#kontakt"
+    weight = 5
 
 [sitemap]
   changefreq = 'monthly'
