@@ -1,6 +1,3 @@
-@import "base.css";
-@source "hugo_stats.json";
-
 @theme {
   --color-primary: oklch(56.8% 0.1408 244.2);
 }
