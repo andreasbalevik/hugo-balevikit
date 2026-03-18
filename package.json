@@ -4,7 +4,8 @@
   "description": "Balevik IT & Service website",
   "scripts": {
     "dev": "hugo serve --disableFastRender",
-    "build": "hugo --minify"
+    "build": "hugo --minify",
+    "install": "cd themes/balevikit-tailwindcss-hugo-theme && npm install"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.1",
