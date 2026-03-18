@@ -1,7 +1,7 @@
 {{ define "main" }}
 <!-- Hero Section -->
 <section id="main-content" class="bg-gradient-to-br from-[#0080C8] to-[#004E7A] text-white">
-    <div class="container">
+    <div class="container md:py-24!">
         <div class="max-w-3xl mx-auto text-center">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-white">Enkle nettsider for bedrifter i Vestland</h1>
             <p class="text-xl leading-relaxed text-white text-pretty mb-8 max-w-2xl mx-auto">Fast pris, rask levering og ingen overraskelser. Du forteller om bedriften din – vi bygger resten.</p>
@@ -9,17 +9,6 @@
         </div>
     </div>
 </section>
-
-<!-- Intro (vises kun om _index.md har innhold) -->
-{{- with .Content }}
-<section class="bg-white">
-    <div class="container">
-        <div class="prose max-w-2xl mx-auto">
-            {{ . }}
-        </div>
-    </div>
-</section>
-{{- end }}
 
 <!-- Tjenester -->
 <section id="tjenester" class="bg-white">
