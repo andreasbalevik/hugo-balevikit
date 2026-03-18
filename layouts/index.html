@@ -2,15 +2,10 @@
 <!-- Hero Section -->
 <section id="main-content" class="bg-gradient-to-br from-[#0080C8] to-[#004E7A] text-white">
     <div class="container">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
-            <div class="max-w-2xl">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-white">Enkle nettsider for bedrifter i Vestland</h1>
-                <p class="text-xl leading-relaxed text-white text-pretty mb-8">Fast pris, rask levering og ingen overraskelser. Du forteller om bedriften din – vi bygger resten.</p>
-                <a href="#kontakt" class="inline-flex items-center gap-2 text-base font-semibold bg-white/20 hover:bg-white/30 active:bg-white/40 border-2 border-white text-white px-8 py-4 rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Ta kontakt</a>
-            </div>
-            <div class="relative">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Skjermbilde av en nettside under utvikling på en bærbar PC" class="w-full h-auto rounded-lg shadow-md">
-            </div>
+        <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-white">Enkle nettsider for bedrifter i Vestland</h1>
+            <p class="text-xl leading-relaxed text-white text-pretty mb-8 max-w-2xl mx-auto">Fast pris, rask levering og ingen overraskelser. Du forteller om bedriften din – vi bygger resten.</p>
+            <a href="#kontakt" class="inline-flex items-center gap-2 text-base font-semibold bg-white/20 hover:bg-white/30 active:bg-white/40 border-2 border-white text-white px-8 py-4 rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Ta kontakt</a>
         </div>
     </div>
 </section>
@@ -128,17 +123,17 @@
             <div class="text-center">
                 <div class="w-12 h-12 mx-auto mb-6 bg-primary text-white rounded-full flex items-center justify-center text-lg font-semibold shadow-sm" aria-hidden="true">2</div>
                 <h3 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6">Utkast</h3>
-                <p class="text-base leading-relaxed text-pretty">Vi lager et første utkast som du får se og gi tilbakemelding på</p>
+                <p class="text-base leading-relaxed text-pretty">Vi lager et første utkast som du får se og gi tilbakemelding på.</p>
             </div>
             <div class="text-center">
                 <div class="w-12 h-12 mx-auto mb-6 bg-primary text-white rounded-full flex items-center justify-center text-lg font-semibold shadow-sm" aria-hidden="true">3</div>
                 <h3 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6">Justeringer</h3>
-                <p class="text-base leading-relaxed text-pretty">Vi justerer og forbedrer sammen til du er fornøyd med resultatet</p>
+                <p class="text-base leading-relaxed text-pretty">Vi justerer og forbedrer sammen til du er fornøyd med resultatet.</p>
             </div>
             <div class="text-center">
                 <div class="w-12 h-12 mx-auto mb-6 bg-primary text-white rounded-full flex items-center justify-center text-lg font-semibold shadow-sm" aria-hidden="true">4</div>
                 <h3 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6">Lansering</h3>
-                <p class="text-base leading-relaxed text-pretty">Alt er klart – nettsiden er på nett og klar til bruk</p>
+                <p class="text-base leading-relaxed text-pretty">Alt er klart – nettsiden er på nett og klar til bruk.</p>
             </div>
         </div>
     </div>
@@ -153,7 +148,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <a href="https://balestrandfjordangling.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk Balestrand Fjord Angling (åpner i ny fane)" class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow transition-all duration-300 overflow-hidden block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
                 <div class="aspect-video bg-gray-100 relative overflow-hidden">
-                    <img src="/balestrandfjordangling.png" alt="Skjermbilde av Balestrand Fjord Angling sin nettside" class="w-full h-full object-cover">
+                    {{ partial "components/images/image.html" (dict "src" "images/balestrandfjordangling.png" "alt" "Skjermbilde av Balestrand Fjord Angling sin nettside" "preset" "card" "imgClass" "w-full h-full object-cover") }}
                 </div>
                 <div class="p-6 md:p-8">
                     <h3 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-primary">Balestrand Fjord Angling</h3>
@@ -166,7 +161,7 @@
 
             <a href="https://fjordapartments.no" target="_blank" rel="noopener noreferrer" aria-label="Besøk Fjord Apartments (åpner i ny fane)" class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow transition-all duration-300 overflow-hidden block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
                 <div class="aspect-video bg-gray-100 relative overflow-hidden">
-                    <img src="/fjordapartments.png" alt="Skjermbilde av Fjord Apartments sin nettside" class="w-full h-full object-cover">
+                    {{ partial "components/images/image.html" (dict "src" "images/fjordapartments.png" "alt" "Skjermbilde av Fjord Apartments sin nettside" "preset" "card" "imgClass" "w-full h-full object-cover") }}
                 </div>
                 <div class="p-6 md:p-8">
                     <h3 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-primary">Fjord Apartments</h3>
