@@ -1,0 +1,71 @@
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "{{ .Site.BaseURL }}#business",
+  "name": "{{ .Site.Title }}",
+  "description": "{{ .Site.Params.description }}",
+  "url": "{{ .Site.BaseURL }}",
+  "telephone": "{{ .Site.Params.phone }}",
+  "email": "{{ .Site.Params.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{ .Site.Params.business.locality }}",
+    "addressRegion": "{{ .Site.Params.business.region }}",
+    "postalCode": "{{ .Site.Params.business.postalCode }}",
+    "addressCountry": "{{ .Site.Params.business.country }}"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "61.2294",
+    "longitude": "7.1003"
+  },
+  "areaServed": [
+    {{ $areas := split .Site.Params.serviceArea ", " }}
+    {{ range $i, $area := $areas }}{{ if $i }},{{ end }}
+    { "@type": "City", "name": "{{ $area }}" }
+    {{ end }}
+  ],
+  "priceRange": "NOK 2500–15000",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Nettsideløsninger",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Enkel nettside",
+          "description": "1-sides nettside med standard design. Fast pris fra 2.500 kr."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Standard nettside",
+          "description": "2–5 siders nettside med tilpasset design, flerspråk og navigasjon. Fast pris fra 5.000 kr."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Skreddersydd nettside",
+          "description": "Nettside med CMS, kontaktskjema og avansert funksjonalitet. Pris etter avtale."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "IT-konsultasjon",
+          "description": "Faglig IT-rådgivning for bedrifter i Vestland. Over 10 års erfaring."
+        }
+      }
+    ]
+  }
+}
+</script>
+{{ end }}
