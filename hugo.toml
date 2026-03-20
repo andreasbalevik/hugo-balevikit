@@ -58,8 +58,8 @@ theme = 'balevikit-tailwindcss-hugo-theme'
     url = "/#kunder"
     weight = 3
   [[menu.main]]
-    name = "Løsninger"
-    url = "/#losninger"
+    name = "Nettside"
+    url = "/#nettside"
     weight = 4
   [[menu.main]]
     name = "Kontakt"
