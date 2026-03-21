@@ -64,7 +64,7 @@ theme = 'balevikit-tailwindcss-hugo-theme'
   [[menu.main]]
     name = "Kontakt"
     url = "/#kontakt"
-    weight = 5
+    weight = 6
 
 [sitemap]
   changefreq = 'monthly'

@@ -6,9 +6,17 @@
   "@id": "{{ .Site.BaseURL }}#business",
   "name": "{{ .Site.Title }}",
   "description": "{{ .Site.Params.description }}",
+  "image": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
   "url": "{{ .Site.BaseURL }}",
+  "inLanguage": "{{ .Site.LanguageCode | default "nb-NO" }}",
   "telephone": "{{ .Site.Params.phone }}",
   "email": "{{ .Site.Params.email }}",
+  "knowsAbout": [
+    "Nettsider for bedrifter",
+    "Webutvikling",
+    "IT-konsultasjon",
+    "Skreddersydde webløsninger"
+  ],
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "{{ .Site.Params.business.locality }}",
