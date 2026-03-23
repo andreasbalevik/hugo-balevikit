@@ -1,0 +1,39 @@
+<section id="kunder" class="bg-primary/2">
+    <div class="container">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-0 text-primary">Fornøyde kunder</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <a href="https://balestrandfjordangling.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk Balestrand Fjord Angling (åpner i ny fane)" class="bg-white border border-primary/20 rounded-lg shadow-sm hover:shadow transition-all duration-300 overflow-hidden block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                <div class="aspect-video bg-primary/10 relative overflow-hidden">
+                    {{ partial "components/images/image.html" (dict "src" "images/balestrandfjordangling.png" "alt" "Skjermbilde av Balestrand Fjord Angling sin nettside" "preset" "card" "imgClass" "w-full h-full object-cover") }}
+                </div>
+                <div class="p-6 md:p-8">
+                    <h3 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-primary">Balestrand Fjord Angling</h3>
+                    <p class="text-sm text-gray-700 mb-3">balestrandfjordangling.com</p>
+                    <p class="text-sm text-gray-700 bg-primary/10 inline-block px-4 py-2 rounded-full">
+                        <span class="font-semibold">Løsning:</span> Skreddersydd
+                    </p>
+                </div>
+            </a>
+
+            <a href="https://fjordapartments.no" target="_blank" rel="noopener noreferrer" aria-label="Besøk Fjord Apartments (åpner i ny fane)" class="bg-white border border-primary/20 rounded-lg shadow-sm hover:shadow transition-all duration-300 overflow-hidden block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                <div class="aspect-video bg-primary/10 relative overflow-hidden">
+                    {{ partial "components/images/image.html" (dict "src" "images/fjordapartments.png" "alt" "Skjermbilde av Fjord Apartments sin nettside" "preset" "card" "imgClass" "w-full h-full object-cover") }}
+                </div>
+                <div class="p-6 md:p-8">
+                    <h3 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-primary">Fjord Apartments</h3>
+                    <p class="text-sm text-gray-700 mb-3">fjordapartments.no</p>
+                    <p class="text-sm text-gray-700 bg-primary/10 inline-block px-4 py-2 rounded-full">
+                        <span class="font-semibold">Løsning:</span> Standard
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="mt-12 text-center">
+            <p class="text-sm text-gray-700 mb-3">Tidligere kunder:</p>
+            <p class="text-sm text-gray-700">Balholm Bilutleige • Buene Rørservice • Vestland Tømrerteam</p>
+        </div>
+    </div>
+</section>

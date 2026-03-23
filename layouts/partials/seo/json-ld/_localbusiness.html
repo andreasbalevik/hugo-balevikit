@@ -24,19 +24,20 @@
     "postalCode": "{{ .Site.Params.business.postalCode }}",
     "addressCountry": "{{ .Site.Params.business.country }}"
   },
-  "geo": {
+  {{ if and .Site.Params.latitude .Site.Params.longitude }}"geo": {
     "@type": "GeoCoordinates",
-    "latitude": "61.2294",
-    "longitude": "7.1003"
+    "latitude": "{{ .Site.Params.latitude }}",
+    "longitude": "{{ .Site.Params.longitude }}"
   },
+  {{ end }}
   "areaServed": [
     {{ $areas := split .Site.Params.serviceArea ", " }}
     {{ range $i, $area := $areas }}{{ if $i }},{{ end }}
     { "@type": "City", "name": "{{ $area }}" }
     {{ end }}
   ],
-  "priceRange": "NOK 2500–15000",
-  "hasOfferCatalog": {
+  {{ with .Site.Params.priceRange }}"priceRange": "{{ . }}",
+  {{ end }}"hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Nettsideløsninger",
     "itemListElement": [
