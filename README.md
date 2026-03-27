@@ -22,6 +22,26 @@ npm run build
 Dette bygger Tailwind CSS (minified) og Hugo (minified).
 Output: `public/` mappen
 
+### Tailwind plugins og theme
+
+Tailwind-pluginer som brukes under Hugo-build må ligge i rotprosjektets
+`package.json`, selv om de også brukes av theme-et.
+
+I dette prosjektet gjelder det blant annet
+`@tailwindcss/typography`.
+
+Årsaken er at `css.TailwindCSS` under build resolver npm-pakker fra
+prosjektroten. Avhengigheter som bare er installert i
+`themes/balevikit-tailwindcss-hugo-theme/` blir derfor ikke automatisk funnet
+av Netlify/Hugo.
+
+Hvis denne dependencyen fjernes fra rotprosjektet, vil build feile med en feil
+som ligner på:
+
+```text
+Can't resolve '@tailwindcss/typography' in '/opt/build/repo'
+```
+
 ## Deploy
 
 Prosjektet er satt opp for Netlify med:
