@@ -1,6 +1,6 @@
 # Balevik IT & Service
 
-> Balevik IT & Service bygger raske, profesjonelle nettsider og tilbyr IT-konsultasjon for bedrifter i Sogndal og Vestland, Norge.
+> Balevik IT & Service lager enkle nettsider for bedrifter i Sogndal og Vestland og tilbyr også IT-konsultasjon.
 
 ## Company
 
@@ -14,7 +14,7 @@
 
 ## Services
 
-- Business websites
+- Business websites for small companies
 - Landing pages
 - Multi-page websites
 - Custom web solutions
@@ -35,6 +35,8 @@
 ## Key pages
 
 - / — company overview, services, pricing, process, client references, FAQ, and contact information
+- /nettside-for-bedrifter-i-sogndal/ — what is included in a business website and who it fits
+- /pris-pa-nettside/ — what affects price and how the website packages differ
 
 ## Structured data
 
