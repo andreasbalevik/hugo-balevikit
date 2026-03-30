@@ -19,7 +19,8 @@
   ],
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "{{ .Site.Params.business.locality }}",
+    {{ with .Site.Params.business.locality }}"addressLocality": "{{ . }}",
+    {{ end }}
     "addressRegion": "{{ .Site.Params.business.region }}",
     "postalCode": "{{ .Site.Params.business.postalCode }}",
     "addressCountry": "{{ .Site.Params.business.country }}"
@@ -33,7 +34,7 @@
   "areaServed": [
     {{ $areas := split .Site.Params.serviceArea ", " }}
     {{ range $i, $area := $areas }}{{ if $i }},{{ end }}
-    { "@type": "City", "name": "{{ $area }}" }
+    { "@type": "AdministrativeArea", "name": "{{ $area }}" }
     {{ end }}
   ],
   {{ with .Site.Params.priceRange }}"priceRange": "{{ . }}",

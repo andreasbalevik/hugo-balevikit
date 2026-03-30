@@ -1,6 +1,6 @@
 # Balevik IT & Service
 
-> Balevik IT & Service lager enkle nettsider for bedrifter i Sogndal og Vestland og tilbyr også IT-konsultasjon.
+> Balevik IT & Service lager nettsider for bedrifter i Vestland og tilbyr også IT-konsultasjon.
 
 ## Company
 
@@ -8,7 +8,7 @@
 - Website: https://balevikit.no/
 - Canonical URL: https://balevikit.no/
 - Primary language: Norwegian Bokmål (nb-NO)
-- Location: Sogndal, Vestland, Norway
+- Location: Vestland, Norway
 - Contact email: andreasbalevik@gmail.com
 - Contact phone: +47 95 12 77 23
 
@@ -22,20 +22,12 @@
 
 ## Coverage
 
-- Sogndal
-- Leikanger
-- Balestrand
-- Luster
-- Aurland
-- Årdal
-- Vik
-- Høyanger
 - Vestland
 
 ## Key pages
 
 - / — company overview, services, pricing, process, client references, FAQ, and contact information
-- /nettside-for-bedrifter-i-sogndal/ — what is included in a business website and who it fits
+- /nettsider-for-bedrifter-i-vestland/ — local service page for businesses in Vestland
 - /pris-pa-nettside/ — what affects price and how the website packages differ
 
 ## Structured data

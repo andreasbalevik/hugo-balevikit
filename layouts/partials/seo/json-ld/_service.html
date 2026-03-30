@@ -1,0 +1,44 @@
+{{/* Adds Service schema because local money pages need explicit service intent beyond generic WebPage schema. */}}
+{{- $enabled := false -}}
+{{- if .Params.service -}}
+  {{- $enabled = true -}}
+{{- end -}}
+{{- with .Params.schema -}}
+  {{- if .service -}}
+    {{- $enabled = true -}}
+  {{- end -}}
+{{- end -}}
+{{- if and $enabled .IsPage -}}
+  {{- $description := .Description | default (.Summary | plainify) -}}
+  {{- $serviceName := .Params.service_name | default .Title -}}
+  {{- $serviceType := .Params.service_type | default $serviceName -}}
+  {{- $areas := slice -}}
+  {{- with .Params.area_served -}}
+    {{- range . -}}
+      {{- $areas = $areas | append (dict "@type" "AdministrativeArea" "name" .) -}}
+    {{- end -}}
+  {{- else -}}
+    {{- with .Site.Params.business.region -}}
+      {{- $areas = $areas | append (dict "@type" "AdministrativeArea" "name" .) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $provider := dict
+    "@type" "ProfessionalService"
+    "@id" (printf "%s#business" .Site.BaseURL)
+    "name" .Site.Title
+    "url" .Site.BaseURL
+  -}}
+  {{- $service := dict
+    "@context" "https://schema.org"
+    "@type" "Service"
+    "@id" (printf "%s#service" .Permalink)
+    "name" $serviceName
+    "serviceType" $serviceType
+    "description" $description
+    "provider" $provider
+    "areaServed" $areas
+    "url" .Permalink
+    "inLanguage" (.Site.LanguageCode | default "nb-NO")
+  -}}
+<script type="application/ld+json">{{ $service | jsonify | safeJS }}</script>
+{{- end -}}

@@ -20,20 +20,20 @@ theme = 'balevikit-tailwindcss-hugo-theme'
     target = 'assets/notwatching/hugo_stats.json'
 
 [params]
-  description = 'Fast pris, rask levering og enkle nettsider for bedrifter i Sogndal og Vestland.'
+  description = 'Fast pris, rask levering og enkle nettsider for bedrifter i Vestland.'
   email = 'andreasbalevik@gmail.com'
   phone = '+47 95 12 77 23'
   orgnr = '925316504'
-  keywords = ['nettsider Vestland', 'nettside Sogndal', 'lage nettside Vestland', 'webbyrå Vestland', 'nettside bedrift Sogndal', 'IT-konsultasjon Vestland', 'nettside pris Vestland', 'webutvikling Sogndal', 'nettside Balestrand', 'nettside Leikanger', 'nettside Luster', 'IT-tjenester Vestland', 'statiske nettsider Norge', 'nettside fra 2500 kr']
+  keywords = ['nettsider Vestland', 'lage nettside Vestland', 'nettsider for bedrifter Vestland', 'utvikle nettside Vestland', 'IT-konsultasjon Vestland', 'nettside pris Vestland', 'IT-tjenester Vestland', 'statiske nettsider Norge', 'nettside fra 3500 kr']
   author = 'Andreas Balevik'
   ogimage = '/brand_image.jpg'
   
   # Local SEO
-  location = 'Sogndal, Vestland, Norge'
-  serviceArea = 'Sogndal, Leikanger, Balestrand, Luster, Aurland, Årdal, Vik, Høyanger, Vestland'
+  location = 'Vestland, Norge'
+  serviceArea = 'Vestland'
   latitude = '61.2294'
   longitude = '7.1003'
-  priceRange = 'NOK 2500–15000'
+  priceRange = 'NOK 3500–15000'
   
   logo = 'logo.png'
   twitter_card = 'summary_large_image'
@@ -43,7 +43,7 @@ theme = 'balevikit-tailwindcss-hugo-theme'
 
 [params.business]
   name = 'Balevik IT & Service'
-  locality = 'Sogndal'
+  locality = ''
   region = 'Vestland'
   country = 'NO'
   postalCode = '6856'
@@ -70,8 +70,8 @@ theme = 'balevikit-tailwindcss-hugo-theme'
     url = "/#kontakt"
     weight = 6
   [[menu.footer]]
-    name = "Nettsider for bedrifter"
-    url = "/nettside-for-bedrifter-i-sogndal/"
+    name = "Nettsider i Vestland"
+    url = "/nettsider-for-bedrifter-i-vestland/"
     weight = 1
   [[menu.footer]]
     name = "Pris på nettside"
