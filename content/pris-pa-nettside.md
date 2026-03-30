@@ -19,7 +19,7 @@ Vi avtaler fast pris for utviklingen før vi starter.
 
 Vi jobber ofte med bedrifter som vil komme raskt i gang med en nettside som har riktig omfang fra start.
 
-[Les om nettsider for bedrifter i Vestland](/nettsider-for-bedrifter-i-vestland/).
+[Les mer om nettsider](/nettsider-for-bedrifter-i-vestland/).
 
 ## Hva påvirker prisen?
 
