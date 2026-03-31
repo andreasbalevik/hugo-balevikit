@@ -3,7 +3,7 @@ title: "Nettsider for bedrifter i Vestland – Balevik IT & Service"
 description: "Fast pris, rask levering og enkle nettsider for bedrifter i Vestland."
 faq:
   - question: "Jobber dere bare lokalt?"
-    answer: "Vi jobber med bedrifter i Vestland. Samarbeidet kan være lokalt eller digitalt."
+    answer: "Vi jobber med bedrifter i hele Vestland. Samarbeidet kan være lokalt eller digitalt."
   - question: "Hva koster en enkel nettside?"
     answer: "En enkel nettside starter fra 3.500 kr. Pris avhenger av innhold, antall sider og funksjoner."
   - question: "Kan nettsiden bygges ut senere?"
