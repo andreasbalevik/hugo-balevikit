@@ -26,7 +26,7 @@
 
 ## Key pages
 
-- / — company overview, services, pricing, process, client references, FAQ, and contact information
+- / — company overview, services, pricing, client references, and contact information
 - /nettsider-for-bedrifter-i-vestland/ — local service page for businesses in Vestland
 - /pris-pa-nettside/ — what affects price and how the website packages differ
 

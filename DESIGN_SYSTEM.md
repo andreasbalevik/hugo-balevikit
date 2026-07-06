@@ -226,8 +226,6 @@ Samme card-stil brukes i:
 
 [Tjenester: Card │ Card]
 
-[Fordeler: Card │ Card │ Card │ Card]
-
 [Kunder: Card │ Card]
 
 [Priser: Card │ Card │ Card]
@@ -240,9 +238,6 @@ Samme card-stil brukes i:
 [Hero: Tekst (50%) │ Bilde (50%)]
 
 [Tjenester: Card │ Card]
-
-[Fordeler: Card │ Card]
-           [Card │ Card]
 
 [Kunder: Card │ Card]
 
@@ -260,11 +255,6 @@ Samme card-stil brukes i:
 
 [Tjenester: Card   ]
             [Card  ]
-
-[Fordeler: Card    ]
-           [Card   ]
-           [Card   ]
-           [Card   ]
 
 [Kunder: Card      ]
          [Card     ]
@@ -355,14 +345,12 @@ transition-all
 
 Vekslende pattern for visuell separasjon:
 
-1. **Hero**: Blå gradient (`from-accent to-secondary`)
-2. **Tjenester**: Hvit
-3. **Fordeler**: Lys blå gradient (`from-blue-50 to-blue-100`)
-4. **Prosess**: Hvit
-5. **Kunder**: Lys blå gradient (`from-blue-50 to-blue-100`)
-6. **Priser**: Hvit
-7. **Kontakt**: Lys blå gradient (`from-blue-50 to-blue-100`)
-8. **Footer**: Mørk blå gradient (`from-secondary to-primary`)
+1. **Hero**: Primærblå (`bg-primary`, hvit tekst)
+2. **Tjenester**: Hvit (`bg-white`)
+3. **Kunder**: Lys primærtone (`bg-primary/2`)
+4. **Priser**: Hvit (`bg-white`)
+5. **Kontakt**: Lys primærtone (`bg-primary/2`)
+6. **Footer**: Mørk (`bg-gray-900`)
 
 ## Responsivitet
 

@@ -54,10 +54,6 @@ theme = 'balevikit-tailwindcss-hugo-theme'
     url = "/#tjenester"
     weight = 1
   [[menu.main]]
-    name = "Prosess"
-    url = "/#prosess"
-    weight = 2
-  [[menu.main]]
     name = "Kunder"
     url = "/#kunder"
     weight = 3
