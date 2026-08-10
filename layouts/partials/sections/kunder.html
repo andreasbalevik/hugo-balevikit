@@ -1,36 +1,22 @@
 <section id="kunder" class="bg-primary/2">
     <div class="container">
         <div class="text-center mb-16">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-primary">Nettsider vi har laget</h2>
-            <p class="text-lg leading-relaxed text-pretty max-w-2xl mx-auto">Her er to eksempler på arbeid vi har levert.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            <a href="https://balestrandfjordangling.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk Balestrand Fjord Angling (åpner i ny fane)" class="bg-white border border-primary/20 rounded-lg shadow-sm hover:shadow transition-all duration-300 overflow-hidden block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
-                <div class="aspect-video bg-primary/10 relative overflow-hidden">
-                    {{ partial "components/images/image.html" (dict "src" "images/balestrandfjordangling.png" "alt" "Skjermbilde av Balestrand Fjord Angling sin nettside" "preset" "card" "imgClass" "w-full h-full object-cover") }}
-                </div>
-                <div class="p-6 md:p-8">
-                    <h3 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-primary">Balestrand Fjord Angling</h3>
-                    <p class="text-sm text-gray-700 mb-3">balestrandfjordangling.com</p>
-                    <p class="text-sm text-primary font-medium mt-4 mb-0">Besøk nettsiden</p>
-                </div>
-            </a>
-
-            <a href="https://fjordapartments.no" target="_blank" rel="noopener noreferrer" aria-label="Besøk Fjord Apartments (åpner i ny fane)" class="bg-white border border-primary/20 rounded-lg shadow-sm hover:shadow transition-all duration-300 overflow-hidden block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
-                <div class="aspect-video bg-primary/10 relative overflow-hidden">
-                    {{ partial "components/images/image.html" (dict "src" "images/fjordapartments.png" "alt" "Skjermbilde av Fjord Apartments sin nettside" "preset" "card" "imgClass" "w-full h-full object-cover") }}
-                </div>
-                <div class="p-6 md:p-8">
-                    <h3 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-primary">Fjord Apartments</h3>
-                    <p class="text-sm text-gray-700 mb-3">fjordapartments.no</p>
-                    <p class="text-sm text-primary font-medium mt-4 mb-0">Besøk nettsiden</p>
-                </div>
-            </a>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-primary">Kunder og tidligere kunder</h2>
+            <p class="text-lg leading-relaxed text-pretty max-w-2xl mx-auto">Noen av bedriftene vi har jobbet med.</p>
         </div>
 
-        <div class="mt-12 text-center">
-            <p class="text-sm text-gray-700 mb-3">Flere vi har jobbet med:</p>
-            <p class="text-sm text-gray-700">Balholm Bilutleige • Buene Rørservice • Vestland Tømrerteam</p>
+        <div class="max-w-2xl mx-auto bg-white border border-primary/20 rounded-lg shadow-sm p-8 md:p-12">
+            <ul class="space-y-4 text-center">
+                <li>
+                    <a href="https://balestrandfjordangling.com" target="_blank" rel="noopener noreferrer" aria-label="Besøk Balestrand Fjord Angling (åpner i ny fane)" class="text-lg font-medium text-primary hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Balestrand Fjord Angling</a>
+                </li>
+                <li>
+                    <a href="https://fjordapartments.no" target="_blank" rel="noopener noreferrer" aria-label="Besøk Fjord Apartments (åpner i ny fane)" class="text-lg font-medium text-primary hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Fjord Apartments</a>
+                </li>
+                <li class="text-lg font-medium">Balholm Bilutleige</li>
+                <li class="text-lg font-medium">Buene Rørservice</li>
+                <li class="text-lg font-medium">Vestland Tømrerteam</li>
+            </ul>
         </div>
     </div>
 </section>
