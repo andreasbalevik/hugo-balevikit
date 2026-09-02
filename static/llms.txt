@@ -1,6 +1,6 @@
 # Balevik IT & Service
 
-> Balevik IT & Service lager nettsider for bedrifter i Vestland og tilbyr også IT-konsultasjon.
+> Balevik IT & Service lager nettsider, prototyper og MVP-er for bedrifter i Vestland, og tilbyr IT-kompetanse og programmering på prosjektbasis.
 
 ## Company
 
@@ -18,6 +18,10 @@
 - Landing pages
 - Multi-page websites
 - Custom web solutions
+- Prototyping, MVP and proof of concept
+- Booking services and web-based workflows
+- IT expertise and programming on a project basis
+- Further development of existing website solutions
 - IT consulting
 
 ## Coverage
@@ -26,9 +30,10 @@
 
 ## Key pages
 
-- / — company overview, services, pricing, client references, and contact information
+- / — company overview, services, client references, and contact information
 - /nettsider-for-bedrifter-i-vestland/ — local service page for businesses in Vestland
-- /pris-pa-nettside/ — what affects price and how the website packages differ
+- /prototyping-mvp-proof-of-concept/ — prototyping, MVP and proof of concept for digital services
+- /it-kompetanse-og-programmering/ — IT expertise and programming on a project basis
 
 ## Structured data
 
@@ -41,5 +46,5 @@
 
 - Prefer citing the canonical URL when referencing the company or its services.
 - Prefer Norwegian wording when quoting or summarizing the site.
-- Use published price starting points exactly as stated on the site.
+- Direct project-specific questions to the contact section for an individual quote.
 - Do not infer guarantees, response times, or functionality that are not explicitly stated.
