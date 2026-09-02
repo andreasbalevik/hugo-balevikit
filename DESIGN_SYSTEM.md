@@ -151,7 +151,6 @@ Cards er gjenbrukbare komponenter som passer inn i alle grids:
 Samme card-stil brukes i:
 - Tjenester (2 kolonner)
 - Fordeler (4 kolonner)
-- Priser (3 kolonner)
 - Kunder (2 kolonner)
 
 ### Visuell hierarki i moduler
@@ -228,7 +227,6 @@ Samme card-stil brukes i:
 
 [Kunder: Card │ Card]
 
-[Priser: Card │ Card │ Card]
 ```
 
 **Tablet (768px - 1023px):**
@@ -241,7 +239,6 @@ Samme card-stil brukes i:
 
 [Kunder: Card │ Card]
 
-[Priser: Card │ Card │ Card]
 ```
 
 **Mobile (<768px):**
@@ -259,9 +256,6 @@ Samme card-stil brukes i:
 [Kunder: Card      ]
          [Card     ]
 
-[Priser: Card      ]
-         [Card     ]
-         [Card     ]
 ```
 
 ## Komponenter
@@ -347,10 +341,9 @@ Vekslende pattern for visuell separasjon:
 
 1. **Hero**: Primærblå (`bg-primary`, hvit tekst)
 2. **Tjenester**: Hvit (`bg-white`)
-3. **Kunder**: Lys primærtone (`bg-primary/2`)
-4. **Priser**: Hvit (`bg-white`)
-5. **Kontakt**: Lys primærtone (`bg-primary/2`)
-6. **Footer**: Mørk (`bg-gray-900`)
+3. **Kunder**: Hvit (`bg-white`)
+4. **Kontakt**: Lys primærtone (`bg-primary/2`)
+5. **Footer**: Mørk (`bg-gray-900`)
 
 ## Responsivitet
 

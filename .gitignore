@@ -2,3 +2,5 @@ resources/
 public/
 node_modules
 hugo_stats.json
+.impeccable/hook.cache.json
+.impeccable/live/server.json

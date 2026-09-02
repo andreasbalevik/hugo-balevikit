@@ -14,6 +14,10 @@
   "knowsAbout": [
     "Nettsider for bedrifter",
     "Webutvikling",
+    "Prototyping, MVP og proof of concept",
+    "Bookingtjenester",
+    "Programmering på prosjektbasis",
+    "IT-kompetanse",
     "IT-konsultasjon",
     "Skreddersydde webløsninger"
   ],
@@ -36,46 +40,7 @@
     {{ range $i, $area := $areas }}{{ if $i }},{{ end }}
     { "@type": "AdministrativeArea", "name": "{{ $area }}" }
     {{ end }}
-  ],
-  {{ with .Site.Params.priceRange }}"priceRange": "{{ . }}",
-  {{ end }}"hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Nettsideløsninger",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Enkel nettside",
-          "description": "1-sides nettside med standard design. Fast pris fra 3.500 kr."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Standard nettside",
-          "description": "2–5 siders nettside med tilpasset design, flerspråk og navigasjon. Fast pris fra 5.000 kr."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Skreddersydd nettside",
-          "description": "Nettside med CMS, kontaktskjema og avansert funksjonalitet. Pris etter avtale."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "IT-konsultasjon",
-          "description": "Faglig IT-rådgivning for bedrifter i Vestland. Over 10 års erfaring."
-        }
-      }
-    ]
-  }
+  ]
 }
 </script>
 {{ end }}

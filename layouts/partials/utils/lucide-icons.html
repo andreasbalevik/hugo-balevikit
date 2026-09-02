@@ -1,0 +1,12 @@
+<script defer src="https://unpkg.com/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    if (window.lucide && lucide.createIcons) {
+      lucide.createIcons();
+    } else {
+      document.querySelectorAll("[data-lucide]").forEach(function (icon) {
+        icon.classList.add("hidden");
+      });
+    }
+  });
+</script>

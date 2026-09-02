@@ -20,6 +20,15 @@
     {{ partial "components/prose-content.html" . }}
     {{ partial "components/page-faq.html" . }}
 
+    <div class="not-prose mt-16 bg-primary/2 border border-primary/20 rounded-lg p-8 md:p-12 text-center">
+      <h2 class="text-xl md:text-2xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-4 text-primary">Ta kontakt for et uforpliktende pristilbud</h2>
+      <p class="text-base leading-relaxed text-pretty max-w-xl mx-auto mb-8">Fortell kort om prosjektet ditt, så svarer vi raskt med et forslag som passer behovet ditt.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="mailto:{{ .Site.Params.email }}" class="inline-flex items-center gap-2 text-base font-semibold bg-primary text-white px-8 py-4 rounded-lg transition-all duration-300 hover:bg-primary/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Send e-post</a>
+        <a href="tel:{{ .Site.Params.phone | replaceRE `\s` `` }}" class="inline-flex items-center gap-2 text-base font-semibold text-primary border border-primary/30 px-8 py-4 rounded-lg transition-all duration-300 hover:bg-primary/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Ring {{ .Site.Params.phone }}</a>
+      </div>
+    </div>
+
   </article>
 </div>
 

@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-02T07:09:07.168Z",
+  "title": "Design System: Balevik IT & Service",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Fjordblå",
+        "canonical": "oklch(44% 0.11 244)",
+        "tonalRamp": [
+          "oklch(18% 0.05 244)",
+          "oklch(26% 0.07 244)",
+          "oklch(34% 0.09 244)",
+          "oklch(44% 0.11 244)",
+          "oklch(58% 0.10 244)",
+          "oklch(70% 0.08 244)",
+          "oklch(83% 0.05 244)",
+          "oklch(94% 0.02 244)"
+        ]
+      },
+      "neutral-bg": {
+        "role": "neutral",
+        "displayName": "Hvit bakgrunn",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#111827",
+          "#374151",
+          "#6b7280",
+          "#9ca3af",
+          "#d1d5db",
+          "#e5e7eb",
+          "#f3f4f6",
+          "#ffffff"
+        ]
+      },
+      "neutral-dark": {
+        "role": "neutral",
+        "displayName": "Mørk skifer",
+        "canonical": "#111827",
+        "tonalRamp": [
+          "#030712",
+          "#111827",
+          "#1f2937",
+          "#374151",
+          "#4b5563",
+          "#6b7280",
+          "#9ca3af",
+          "#d1d5db"
+        ]
+      },
+      "neutral-body": {
+        "role": "neutral",
+        "displayName": "Kulltekst",
+        "canonical": "#1f2937",
+        "tonalRamp": [
+          "#030712",
+          "#111827",
+          "#1f2937",
+          "#374151",
+          "#4b5563",
+          "#6b7280",
+          "#9ca3af",
+          "#d1d5db"
+        ]
+      },
+      "neutral-muted": {
+        "role": "neutral",
+        "displayName": "Dempet skifer",
+        "canonical": "#374151",
+        "tonalRamp": [
+          "#111827",
+          "#1f2937",
+          "#374151",
+          "#4b5563",
+          "#6b7280",
+          "#9ca3af",
+          "#d1d5db",
+          "#e5e7eb"
+        ]
+      },
+      "neutral-border": {
+        "role": "neutral",
+        "displayName": "Lys skiferkant",
+        "canonical": "#e5e7eb",
+        "tonalRamp": [
+          "#374151",
+          "#4b5563",
+          "#6b7280",
+          "#9ca3af",
+          "#d1d5db",
+          "#e5e7eb",
+          "#f3f4f6",
+          "#ffffff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero- og sideoverskrifter."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Seksjonsoverskrifter."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Kort- og støtteoverskrifter."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Brødtekst og forklaringer."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Handlingsetiketter og metadata."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient-low",
+        "value": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+        "purpose": "Rolig avgrensning av kontakt- og innholdsflater."
+      },
+      {
+        "name": "action-lift",
+        "value": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+        "purpose": "Moderat hover-løft på primære handlinger."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Rolige overganger på hover, fokus og navigasjon."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "2xl",
+        "value": "1536px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Hovedhandling på lyse flater.",
+      "html": "<a class=\"ds-button-primary\" href=\"#kontakt\">Ta kontakt</a>",
+      "css": ".ds-button-primary { display: inline-flex; align-items: center; justify-content: center; background: var(--color-primary, oklch(44% 0.11 244)); color: #fff; padding: 16px 32px; border-radius: 8px; font: 600 16px/1.5 'Inter', system-ui, sans-serif; text-decoration: none; transition: background-color 300ms, box-shadow 300ms, transform 300ms; } .ds-button-primary:hover { background: oklch(40% 0.10 244); transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); } .ds-button-primary:focus-visible { outline: 2px solid var(--color-primary, oklch(44% 0.11 244)); outline-offset: 2px; }"
+    },
+    {
+      "name": "Hero Button",
+      "kind": "button",
+      "refersTo": "button-hero",
+      "description": "Hovedhandling på mørk hero.",
+      "html": "<a class=\"ds-button-hero\" href=\"#kontakt\">Ta kontakt</a>",
+      "css": ".ds-button-hero { display: inline-flex; align-items: center; justify-content: center; background: #fff; color: var(--color-primary, oklch(44% 0.11 244)); padding: 16px 32px; border-radius: 8px; font: 600 16px/1.5 'Inter', system-ui, sans-serif; text-decoration: none; transition: background-color 300ms, box-shadow 300ms, transform 300ms; } .ds-button-hero:hover { background: #f3f4f6; transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); } .ds-button-hero:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Sekundær handling uten å konkurrere med hovedhandlingen.",
+      "html": "<a class=\"ds-button-secondary\" href=\"#tjenester\">Les mer</a>",
+      "css": ".ds-button-secondary { display: inline-flex; align-items: center; justify-content: center; background: transparent; color: var(--color-primary, oklch(44% 0.11 244)); padding: 16px 32px; border: 1px solid var(--color-primary, oklch(44% 0.11 244)); border-radius: 8px; font: 600 16px/1.5 'Inter', system-ui, sans-serif; text-decoration: none; transition: background-color 300ms, color 300ms; } .ds-button-secondary:hover { background: color-mix(in oklab, var(--color-primary, oklch(44% 0.11 244)) 5%, transparent); } .ds-button-secondary:focus-visible { outline: 2px solid var(--color-primary, oklch(44% 0.11 244)); outline-offset: 2px; }"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Tjenesteinformasjon med svak primærtint og tydelig tekst.",
+      "html": "<article class=\"ds-service-card\"><h3>Nettside</h3><p>En tydelig nettside tilpasset bedriften.</p></article>",
+      "css": ".ds-service-card { background: color-mix(in oklab, var(--color-primary, oklch(44% 0.11 244)) 2%, #fff); color: #1f2937; padding: 32px; border: 1px solid color-mix(in oklab, var(--color-primary, oklch(44% 0.11 244)) 20%, transparent); border-radius: 8px; } .ds-service-card h3 { margin: 0 0 24px; color: var(--color-primary, oklch(44% 0.11 244)); font: 500 20px/1.2 'Inter', system-ui, sans-serif; letter-spacing: -0.015em; } .ds-service-card p { margin: 0; font: 400 16px/1.625 'Inter', system-ui, sans-serif; } @media (min-width: 768px) { .ds-service-card { padding: 48px; } } @media (min-width: 1024px) { .ds-service-card { padding: 64px; } }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Fast toppnavigasjon med diskret skillelinje.",
+      "html": "<nav class=\"ds-navigation\"><a href=\"#\">Balevik IT &amp; Service</a><a href=\"#kontakt\">Kontakt</a></nav>",
+      "css": ".ds-navigation { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 70px; padding: 0 16px; background: #fff; border-bottom: 1px solid #e2e8f0; font: 400 16px/1.5 'Inter', system-ui, sans-serif; } .ds-navigation a { color: #111827; text-decoration: none; } .ds-navigation a:hover { color: var(--color-primary, oklch(44% 0.11 244)); } .ds-navigation a:focus-visible { outline: 2px solid var(--color-primary, oklch(44% 0.11 244)); outline-offset: 2px; }"
+    },
+    {
+      "name": "Contact Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Kontaktflate for e-post, telefon og neste steg.",
+      "html": "<div class=\"ds-contact-card\"><strong>Ta kontakt</strong><a href=\"mailto:andreasbalevik@gmail.com\">andreasbalevik@gmail.com</a></div>",
+      "css": ".ds-contact-card { display: grid; gap: 32px; max-width: 42rem; margin: 0 auto; padding: 32px; background: #fff; border: 1px solid color-mix(in oklab, var(--color-primary, oklch(44% 0.11 244)) 20%, transparent); border-radius: 8px; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); color: #1f2937; } .ds-contact-card strong { color: var(--color-primary, oklch(44% 0.11 244)); font: 600 20px/1.2 'Inter', system-ui, sans-serif; } .ds-contact-card a { color: var(--color-primary, oklch(44% 0.11 244)); font: 600 20px/1.5 'Inter', system-ui, sans-serif; } .ds-contact-card a:focus-visible { outline: 2px solid var(--color-primary, oklch(44% 0.11 244)); outline-offset: 2px; } @media (min-width: 768px) { .ds-contact-card { padding: 48px; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Det klare nordiske verkstedet",
+    "overview": "Dette er en arbeidsmetafor utledet fra den eksisterende nordiske, funksjonelle utformingen og er ikke en ny visuell retning. Systemet skal føles rolig, presist og lett å forstå. Hvit bakgrunn, en kjølig fjordblå aksent og moderate overflater lar tjenestene og neste steg være tydelige.\n\nKomposisjonen bruker god luft, enkel geometri og få visuelle virkemidler. Teknisk innhold kan få en tydeligere rolle gjennom den eksisterende svart-hvitt-heroen med blå overlay, men resten av siden skal ikke konkurrere med den.",
+    "keyCharacteristics": [
+      "kjølig fjordblå aksent mot hvite og mørke nøytraler",
+      "Inter med moderate vekter og balanserte overskrifter",
+      "flate eller svakt løftede overflater med konsistente kanter",
+      "tydelig responsiv rytme fremfor dekorativ kompleksitet"
+    ],
+    "rules": [
+      {
+        "name": "The Fjord Accent Rule",
+        "body": "Bruk fjordblå som eneste strukturelle aksent. Nye visuelle farger må ha en funksjonell grunn og skal ikke bli en ny merkevarefarge.",
+        "section": "colors"
+      },
+      {
+        "name": "The Quiet Hierarchy Rule",
+        "body": "Bruk størrelse, vekt og luft for å skille nivåer. Ikke legg til ekstra fonter, dekorativ tekst eller unødvendig fet skrift.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "Overflater skal være flate i hvile. Bruk skygge bare for avgrensning eller som respons på hover, ikke som dekorasjon.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do bruk `--color-primary` som eneste merkevareaksent.",
+      "Do bruk Tailwind utilities og eksisterende container-/spacing-mønstre.",
+      "Do hold én tydelig primærhandling per seksjon.",
+      "Do behold 1px grenser, moderate radier og synlig tastaturfokus.",
+      "Do la hero-bildet være teknisk, svart-hvitt og blåtonet av overlayen."
+    ],
+    "donts": [
+      "Don't introduser nye fargepaletter, gradienter eller tunge skygger uten en konkret funksjon.",
+      "Don't bruk `font-bold` eller legg til en ny fontfamilie.",
+      "Don't bruk mange piller, tykke sidekanter eller dekorkort.",
+      "Don't la nye elementer gi horisontal overflow på mobil.",
+      "Don't legg tilbake en offentlig prisside eller konkrete prisbeløp."
+    ]
+  }
+}
