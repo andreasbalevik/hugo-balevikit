@@ -1,10 +1,23 @@
-<section id="hero" class="bg-primary text-white">
-    <div class="container md:py-24!">
+{{/* Background photo: Unsplash photo-1562408590-e32931084e23, used under the Unsplash License. */}}
+{{- $heroImage := resources.Get "images/hero-technology.jpg" -}}
+{{- $heroDesktop := $heroImage.Resize "1800x webp q82" -}}
+{{- $heroMobile := $heroImage.Resize "900x webp q82" -}}
+<section id="hero" class="relative isolate overflow-hidden bg-primary text-white">
+    <img src="{{ $heroDesktop.RelPermalink }}"
+         srcset="{{ $heroMobile.RelPermalink }} 900w, {{ $heroDesktop.RelPermalink }} 1800w"
+         sizes="100vw"
+         alt=""
+         aria-hidden="true"
+         fetchpriority="high"
+         decoding="async"
+         class="absolute inset-0 h-full w-full object-cover grayscale contrast-125 opacity-45">
+    <div class="absolute inset-0 bg-primary/80" aria-hidden="true"></div>
+    <div class="relative container md:py-24!">
         <div class="max-w-3xl mx-auto text-center">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-[-0.015em] text-balance mt-0 mb-6 text-white">Enkle nettsider for bedrifter i Vestland</h1>
             <p class="text-xl leading-relaxed text-white text-pretty mb-8 max-w-2xl mx-auto">Du forteller om bedriften din. Vi bygger resten.</p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-                <a href="#kontakt" class="inline-flex items-center gap-2 text-base font-semibold bg-white text-primary px-8 py-4 rounded-lg touch-manipulation transition-[transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Ta kontakt</a>
+            <div class="flex justify-center mb-6">
+                <a href="#kontakt" class="inline-flex max-w-full items-center justify-center gap-2 text-center text-base font-semibold bg-white text-primary px-8 py-4 rounded-lg touch-manipulation transition-[transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Ta kontakt for et uforpliktende pristilbud</a>
             </div>
         </div>
     </div>

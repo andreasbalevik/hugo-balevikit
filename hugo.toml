@@ -20,11 +20,11 @@ theme = 'balevikit-tailwindcss-hugo-theme'
     target = 'assets/notwatching/hugo_stats.json'
 
 [params]
-  description = 'Fast pris, rask levering og enkle nettsider for bedrifter i Vestland.'
+  description = 'Nettsider, prototyping, programmering og IT-konsultasjon for bedrifter i Vestland.'
   email = 'andreasbalevik@gmail.com'
   phone = '+47 95 12 77 23'
   orgnr = '925316504'
-  keywords = ['nettsider Vestland', 'lage nettside Vestland', 'nettsider for bedrifter Vestland', 'utvikle nettside Vestland', 'IT-konsultasjon Vestland', 'nettside pris Vestland', 'IT-tjenester Vestland', 'statiske nettsider Norge', 'nettside fra 3500 kr']
+  keywords = ['nettsider Vestland', 'lage nettside Vestland', 'nettsider for bedrifter Vestland', 'utvikle nettside Vestland', 'prototyping Vestland', 'MVP utvikling', 'proof of concept Norge', 'programmering prosjektbasis', 'IT-kompetanse Vestland', 'IT-konsultasjon Vestland', 'IT-tjenester Vestland', 'statiske nettsider Norge']
   author = 'Andreas Balevik'
   ogimage = '/brand_image.jpg'
   
@@ -33,10 +33,10 @@ theme = 'balevikit-tailwindcss-hugo-theme'
   serviceArea = 'Vestland'
   latitude = '61.2294'
   longitude = '7.1003'
-  priceRange = 'NOK 3500–15000'
   
   logo = 'logo.png'
   twitter_card = 'summary_large_image'
+  theme_color = '#00578a'
 
 [params.schema]
   localBusiness = true
@@ -59,8 +59,12 @@ theme = 'balevikit-tailwindcss-hugo-theme'
     weight = 3
   [[menu.main]]
     name = "Nettside"
-    url = "/#nettside"
+    url = "/nettsider-for-bedrifter-i-vestland/"
     weight = 4
+  [[menu.main]]
+    name = "Prototyping"
+    url = "/prototyping-mvp-proof-of-concept/"
+    weight = 5
   [[menu.main]]
     name = "Kontakt"
     url = "/#kontakt"
@@ -70,13 +74,17 @@ theme = 'balevikit-tailwindcss-hugo-theme'
     url = "/nettsider-for-bedrifter-i-vestland/"
     weight = 1
   [[menu.footer]]
-    name = "Pris på nettside"
-    url = "/pris-pa-nettside/"
+    name = "Prototyping"
+    url = "/prototyping-mvp-proof-of-concept/"
     weight = 2
+  [[menu.footer]]
+    name = "IT på prosjektbasis"
+    url = "/it-kompetanse-og-programmering/"
+    weight = 3
   [[menu.footer]]
     name = "Kontakt"
     url = "/#kontakt"
-    weight = 3
+    weight = 4
 
 [sitemap]
   changefreq = 'monthly'
